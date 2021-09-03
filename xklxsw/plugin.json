@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "name": "xklxsw",
+    "author": "Cá Mụp Cắn Cáp",
+    "version": 1,
+    "source": "https://www.xklxsw.com/",
+    "regexp": "((www.)?xklxsw\.com\/book\/\d+\/|(www.)?xklxsw.com/.*\.html)",
+    "description": "Support Nhocconsr",
+    "local": "vi-VN",
+    "language": "javascript",
+    "type": "novel"
+  },
+  "script": {
+    "home": "home.js",
+    "genre": "genre.js",
+    "detail": "detail.js",
+    "search": "search.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
+}
