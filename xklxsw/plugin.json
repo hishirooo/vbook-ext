@@ -4,7 +4,7 @@
     "author": "Cá Mụp Cắn Cáp",
     "version": 1,
     "source": "https://www.xklxsw.com/",
-    "regexp": "(www.)?xklxsw.com\/(hot.+html|list.+html|book\/\d+\/)",
+    "regexp": "(www.)?xklxsw.com/(hot.+html|list.+html|book/\\d+/)",
     "description": "Support Nhocconsr",
     "local": "vi-VN",
     "language": "javascript",
