@@ -8,13 +8,13 @@
     "description": "Support Nhocconsr",
     "local": "vi-VN",
     "language": "javascript",
-    "type": "Chinese_novel"
+    "type": "chinese_novel"
   },
   "script": {
     "home": "home.js",
     //"genre": "genre.js",
     "detail": "detail.js",
-    "search": "search.js",
+    //"search": "search.js",
     "toc": "toc.js",
     "chap": "chap.js"
   }
