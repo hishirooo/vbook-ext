@@ -18,6 +18,4 @@ function execute(url) {
         }
         return Response.success(genre);
     }
-
-    return null;
 }
