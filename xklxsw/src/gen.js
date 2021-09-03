@@ -2,12 +2,12 @@ function execute(url) {
 
     var doc = Http.get(url).html();
 
-    var genre = [];
+    var gen = [];
     if (doc) {
         var el = doc.select(".content .sortItem");
         for (var i = 0; i < el.size(); i++) {
             var e = el.get(i);
-            genre.push({
+            gen.push({
                 title: e.select("span.name a").attr("title"),
                 link: e.select("span.name a").attr("href"),
                 author: e.select(".author").text(),
@@ -16,6 +16,6 @@ function execute(url) {
             });
             
         }
-        return Response.success(genre);
+        return Response.success(gen);
     }
 }
