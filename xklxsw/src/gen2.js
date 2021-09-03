@@ -1,5 +1,5 @@
 function execute(url, page) {
-    if(!page) page = '1';
+
     var doc = Http.get(url).html();
 
     var gen = [];
@@ -8,9 +8,9 @@ function execute(url, page) {
         for (var i = 0; i < el.size(); i++) {
             var e = el.get(i);
             gen.push({
-                name: e.select("span.name a").attr("title"),
+                title: e.select("span.name a").attr("title"),
                 link: e.select("span.name a").attr("href"),
-                cover: "https://www.xklxsw.com" + e.select("span.img a img").attr("data-original"),
+                author: e.select(".author").text(),
                 description: e.select(".say").text(),
                 script: "detail.js"
             });
