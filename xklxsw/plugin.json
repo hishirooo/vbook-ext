@@ -8,7 +8,7 @@
     "description": "Support Nhocconsr",
     "local": "vi-VN",
     "language": "javascript",
-    "type": "novel"
+    "type": "Chinese_novel"
   },
   "script": {
     "home": "home.js",
