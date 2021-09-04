@@ -10,9 +10,9 @@ function execute(url) {
             var e = el.get(i);
             list.push({
                 name: e.text(),
-                //url: "https://www.xklxsw.com/book/"+idtruyen+"/"+ e.attr("href"),
-                url: idtruyen+"/"+ e.attr("href"),
-                host: "https://www.xklxsw.com/book/"
+                url: "https://www.xklxsw.com/book/"+idtruyen+"/"+ e.attr("href"),
+                //url: idtruyen+"/"+ e.attr("href"),
+                host: "https://www.xklxsw.com/book"
                 //host: "https://www.xklxsw.com/book/"
             });
 
