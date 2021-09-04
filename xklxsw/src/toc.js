@@ -11,13 +11,12 @@ function execute(url) {
             list.push({
                 name: e.text(),
                 url: "https://www.xklxsw.com/book/"+idtruyen+"/"+ e.attr("href"),
-                host: "https://www.xklxsw.com/book/"
+                host: "https://www.xklxsw.com/book"
                 //host: "https://www.xklxsw.com/book/"
             });
 
         }
-
-        
+  
     }
     return Response.success(list);
 }
