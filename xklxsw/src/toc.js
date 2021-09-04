@@ -1,7 +1,8 @@
 //load chương
-function execute(url) {
-    var doc = Http.get(url).html();
-    var idtruyen = url.match(/http.*book\/(\d+)\//)[1]
+function execute(url) {//khi gửi đi nó clear mất /
+    var doc = Http.get(url+'/').html();
+    var idtruyen = url.match(/http.*book\/(\d+)/)[1];
+    Console.log(idtruyen);
     if (doc){
         var list = [];
         //var el = doc.select(".content div.fd-list").get(3).select('a')
@@ -21,3 +22,5 @@ function execute(url) {
     }
     return Response.success(list);
 }
+
+//Okie rồi đó chạy thử đi

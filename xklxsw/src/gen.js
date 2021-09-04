@@ -11,11 +11,11 @@ function execute(url, page) {
                 name: e.select("span.name a").attr("title"),
                 link: e.select("span.name a").attr("href"),
                 cover: "https://www.xklxsw.com" + e.select("span.img a img").attr("data-original"),
-                description: e.select(".say").text(),
-                script: "detail.js"
+                description: e.select(".say").text(),//Cái desc này nên để chapter hoặc tác giả
+                host: 'https://www.xklxsw.com'
             });
-            
         }
         return Response.success(gen);
     }
-}
+} 
+//Okie >>  detail.js ông làm từng file theo sơ đồ tui vẽ thì sẽ đỡ nhầm đata

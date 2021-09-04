@@ -5,7 +5,7 @@ function execute(url) {
         return Response.success({
             name: doc.select(".content .fd-list .bookimg img").attr("alt"),
             cover: doc.select(".content .fd-list .bookimg img").attr("data-original"),
-            host: "https://www.xklxsw.com/",
+            host: "https://www.xklxsw.com",
             author: doc.select(".content .fd-list").text().match(/作者：(.+?)\s字数/)[1],
             //author: doc.select(".content .fd-list h1").text(),
             description: doc.select(".content .fd-list").text().match(/简介：(.*?)[。 |！]《/)[1]
@@ -15,3 +15,5 @@ function execute(url) {
     }
     return null;
 }
+
+//Detail okie thì tới toc.js (CHô này có chú ý nhỏ là toc.js lấy link từ gen.js gưi tới detail.js để load chap luôn. Nên nhiều khi nó phần trang thì phải xử lý kiểu khác )
