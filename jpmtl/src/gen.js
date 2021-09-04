@@ -1,10 +1,9 @@
 function execute(url, page) {
-    
+
     if(!page) page = '1';
     var json = Http.get(url+page).string();//
-    var item = null;
-    if(!structured) item = JSON.parse(json).book;
-    else item = item=JSON.parse(json);
+    var item = JSON.parse(json);
+
     const bookList = [];
     for (var i in item) {
         var book = item[i];
