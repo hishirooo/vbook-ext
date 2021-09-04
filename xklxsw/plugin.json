@@ -2,11 +2,11 @@
   "metadata": {
     "name": "xklxsw",
     "author": "Cá Mụp Cắn Cáp",
-    "version": 1,
+    "version": 2,
     "source": "https://www.xklxsw.com/",
     "regexp": "(www.)?xklxsw.com/book/\\d+/?",//regex đúng detail.js là được
     //"regexp": "(www.)?xklxsw.com/book/(\\d+)/$)",
-    "description": "Support Nhocconsr, change reg2",
+    "description": "Support Nhocconsr",
     "local": "vi-VN",
     "language": "javascript",
     "type": "chinese_novel"
