@@ -13,7 +13,7 @@ function execute(url) {//khi gửi đi nó clear mất /
                 name: e.text(),
                 url: "https://www.xklxsw.com/book/"+idtruyen+"/"+ e.attr("href"),
                 //url: idtruyen+"/"+ e.attr("href"),
-                host: "https://www.xklxsw.com/book"
+                host: "https://www.xklxsw.com"
                 //host: "https://www.xklxsw.com/book/"
             });
 

@@ -4,7 +4,7 @@
     "author": "Cá Mụp Cắn Cáp",
     "version": 1,
     "source": "https://www.xklxsw.com/",
-    "regexp": "(www.)?xklxsw.com\/((hot-|list-)[0-9a-z].html$|book/(\\d+)/$)",
+    "regexp": "(www.)?xklxsw.com/book/\\d+/?",//regex đúng detail.js là được
     //"regexp": "(www.)?xklxsw.com/book/(\\d+)/$)",
     "description": "Support Nhocconsr, change reg2",
     "local": "vi-VN",
