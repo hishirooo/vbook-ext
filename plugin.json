@@ -1,7 +1,7 @@
 {
     "metadata": {
       "author": "Cá Mụp Cắn Cáp",
-      "description": "Đọc truyện trên trang xklxsw.com"
+      "description": ""
     },
     "data": [
       {
@@ -12,7 +12,18 @@
         "source": "https://www.xklxsw.com",
         "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/xklxsw/icon.png",
         "description": "Đọc truyện trên trang xklxsw.com"
+      },
+      {
+        "name": "jpmtl.com",
+        "author": "Cá Mụp Cắn Cáp",
+        "path": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/xklxsw/plugin.zip",
+        "version": 1,
+        "source": "https://www.jpmtl.com",
+        "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/xklxsw/icon.png",
+        "description": "Đọc truyện trên trang jpmtl.com"
       }
+
     ]
-  }
+    
+}
   
