@@ -5,7 +5,7 @@
     "version": 1,
     "source": "https://www.xklxsw.com/",
     //"regexp": "(www.)?xklxsw.com\/(hot-[0-9a-z].html|list-[0-9a-z].html|book\/(\\d+)\/)",
-    "regexp": "(www.)?xklxsw.com/book/(\\d+)/)",
+    "regexp": "(www.)?xklxsw.com/book/(\\d+)/$)",
     "description": "Support Nhocconsr, change reg",
     "local": "vi-VN",
     "language": "javascript",
