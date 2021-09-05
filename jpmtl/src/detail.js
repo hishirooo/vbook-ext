@@ -10,7 +10,7 @@ function execute(url) {
             host: "https://jpmtl.com",
             author: book_detail.author,
             description: book_detail.synopsis, 
-            detail: "Status: "+ book_detail.status +"<br>Chapter: "+ book_detail.chapter_count,  
+            detail: "Author: "+ book_detail.author + "<br>Chapter: "+ book_detail.chapter_count + "<br>Status: "+ book_detail.status,  
         });        
     }
 } 

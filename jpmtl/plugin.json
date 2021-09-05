@@ -5,7 +5,7 @@
     "version": 1,
     "source": "jpmtl.com",
     "regexp": "jpmtl.com/books/\\d+$",
-    "description": "fix detail",
+    "description": "fix detail - author",
     "local": "vi-VN",
     "language": "javascript",
     "type": "english novel"
