@@ -2,15 +2,15 @@ function execute(url) {
     //https://jpmtl.com/books/296
     const idBook = url.match(/\d+/)[0];
     var doc = Http.get("https://jpmtl.com/v2/book/"+ idBook).string();
-    var detail = JSON.parse(doc);
-    if(detail){
+    var book_detail = JSON.parse(doc);
+    if(book_detail){
         return Response.success({
-            name: detail.title,
-            cover: detail.cover ,
+            name: book_detail.title,
+            cover: book_detail.cover ,
             host: "https://jpmtl.com",
-            author: detail.author,
-            description: detail.synopsis,
-            detail: "Status: "+ detail.status +"\\nChapter: "+ detail.chapter_count,  
+            author: book_detail.author,
+            description: book_detail.synopsis, 
+            detail: "Status: "+ book_detail.status +"<br>Chapter: "+ book_detail.chapter_count,  
         });        
     }
 } 
