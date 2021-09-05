@@ -1,4 +1,7 @@
 function execute(url) {
+//books/
+    const idBook = url.match(/\d+/)[0];
+    url = "https://jpmtl.com/books/"+ idBook;
     var doc = Http.get(url).html();
     if (doc){
         var content = doc.select(".cp-content").html();
