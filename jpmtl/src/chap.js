@@ -1,7 +1,5 @@
 function execute(url) {
 //books/
-    const idBook = url.match(/\d+/)[0];
-    url = "https://jpmtl.com/books/"+ idBook;
     var doc = Http.get(url).html();
     if (doc){
         var content = doc.select(".cp-content").html();
@@ -12,3 +10,4 @@ function execute(url) {
     }   
     return null;
 }
+// đay nhe. hoi xau xi ti nhung chay neu url như trên.

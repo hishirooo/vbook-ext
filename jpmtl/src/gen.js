@@ -10,7 +10,7 @@ function execute(url, page) {
         bookList.push({
             cover : book.cover,
             name : book.title,
-            link: book.id,
+            link: '/books/' + book.id,
             //link: book.id,
             description: book.author,
             host: 'https://jpmtl.com'

@@ -3,12 +3,12 @@
     "name": "jpmtl",
     "author": "Cá mụp cắn cáp",
     "version": 1,
-    "source": "jpmtl.com",
-    "regexp": "jpmtl.com/books/\\d+$",
+    "source": "https://jpmtl.com",
+    "regexp": "(www.)?jpmtl.com/books/\\d+$",
     "description": "fix detail - author",
     "local": "vi-VN",
     "language": "javascript",
-    "type": "english novel"
+    "type": "novel"//sai stype =))
   },
   "script": {
     "home": "home.js",
