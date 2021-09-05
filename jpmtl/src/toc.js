@@ -10,7 +10,7 @@ function execute(url) {
             var chapter = vol[y];
             list_Chapter.push({
                 name: chapter.title,
-                url: chapter.id,
+                url: "/books/" + idBook + "/" + chapter.id,
                 host:"https://jpmtl.com"              
             })
         }
