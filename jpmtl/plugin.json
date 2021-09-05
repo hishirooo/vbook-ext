@@ -5,7 +5,7 @@
     "version": 1,
     "source": "jpmtl.com",
     "regexp": "jpmtl.com/books/\\d+$",
-    "description": "add chapter",
+    "description": "fix content chapter",
     "local": "vi-VN",
     "language": "javascript",
     "type": "english novel"
