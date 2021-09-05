@@ -5,7 +5,11 @@
     "version": 1,
     "source": "jpmtl.com",
     "regexp": "jpmtl.com/books/\\d+$",
+<<<<<<< HEAD
     "description": "fix content chapter",
+=======
+    "description": "fix update",
+>>>>>>> parent of 44a23e7 (add Chapter)
     "local": "vi-VN",
     "language": "javascript",
     "type": "english novel"

@@ -10,7 +10,11 @@ function execute(url) {
             host: "https://jpmtl.com",
             author: detail.author,
             description: detail.synopsis,
+<<<<<<< HEAD
             detail: "Status: "+ detail.status +"\n\nChapter: "+ detail.chapter_count,  
+=======
+            detail:"Total chapter "+ detail.chapter_count,  
+>>>>>>> parent of 44a23e7 (add Chapter)
         });        
     }
 } 

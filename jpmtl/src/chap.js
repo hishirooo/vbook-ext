@@ -1,4 +1,5 @@
 function execute(url) {
+<<<<<<< HEAD
     var doc = Http.get(url).html();
     if (doc){
         var content = doc.select(".cp-content").html();
@@ -7,4 +8,6 @@ function execute(url) {
         return Response.success(content);
     }   
     return null;
+=======
+>>>>>>> parent of 44a23e7 (add Chapter)
 }
