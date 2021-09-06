@@ -14,7 +14,7 @@
         "description": "Đọc truyện trên trang Xklxsw.com"
       },
       {
-        "name": "Jpmtl.com",
+        "name": "Jpmtl",
         "author": "Cá Mụp Cắn Cáp",
         "path": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/jpmtl/plugin.zip",
         "version": 1,
@@ -23,7 +23,7 @@
         "description": "Đọc truyện trên trang Jpmtl.com"
       },
       {
-        "name": "Novellfull.com",
+        "name": "Novell Full",
         "author": "Cá Mụp Cắn Cáp",
         "path": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/novelfull/plugin.zip",
         "version": 1,
