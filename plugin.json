@@ -5,22 +5,31 @@
     },
     "data": [
       {
-        "name": "xklxsw",
+        "name": "Xklxsw",
         "author": "Cá Mụp Cắn Cáp",
         "path": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/xklxsw/plugin.zip",
         "version": 2,
         "source": "https://www.xklxsw.com",
         "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/xklxsw/icon.png",
-        "description": "Đọc truyện trên trang xklxsw.com"
+        "description": "Đọc truyện trên trang Xklxsw.com"
       },
       {
-        "name": "jpmtl.com",
+        "name": "Jpmtl.com",
         "author": "Cá Mụp Cắn Cáp",
         "path": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/jpmtl/plugin.zip",
         "version": 1,
         "source": "https://www.jpmtl.com",
         "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/jpmtl/icon.png",
-        "description": "Đọc truyện trên trang jpmtl.com"
+        "description": "Đọc truyện trên trang Jpmtl.com"
+      },
+      {
+        "name": "Novellfull.com",
+        "author": "Cá Mụp Cắn Cáp",
+        "path": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/novelfull/plugin.zip",
+        "version": 1,
+        "source": "https://www.novelfull.com",
+        "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/novelfull/icon.png",
+        "description": "Đọc truyện trên trang Novellfull.com"
       }
 
     ]
