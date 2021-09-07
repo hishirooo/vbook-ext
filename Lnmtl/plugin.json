@@ -4,7 +4,7 @@
     "author": "Cá mụp cắn cáp",
     "version": 1,
     "source": "lnmtl.com",
-    "regexp": "(www.)?lnmtl.com/[0-9a-z]/[0-9a-z]$", // add sau
+    "regexp": "(www.)?lnmtl.com/[a-z].+/[0-9a-z].+$", // add sau
     "description": "Mô tả",
     "local": "vi-VN",
     "language": "javascript",
