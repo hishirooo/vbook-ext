@@ -5,7 +5,7 @@
     "version": 1,
     "source": "lnmtl.com",
     "regexp": "(www.)?lnmtl.com/[a-z].+/[0-9a-z].+$", // add sau
-    "description": "Mô tả",
+    "description": "beta",
     "local": "vi-VN",
     "language": "javascript",
     "type": "novel"
