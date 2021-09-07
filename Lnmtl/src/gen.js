@@ -23,6 +23,6 @@ function execute(url,page) {
         }
          
     }
-    return Response.success(bookList);   
+    return Response.success(bookList,next);   
 }
 //https://lnmtl.com/novel/library-of-heaven-s-path

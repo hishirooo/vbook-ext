@@ -11,20 +11,17 @@ function execute(url,page) {
     // get list chapter in volume_id
     const list_chapter=[];
     if(!page) page="1";
-    const next=0;
-    var total_page_in_vol=0;
+    const lastpage = 1;
     for(var id in list_id_volume){
         // volume
         var volume_id = list_id_volume[id];
         
         //load page 1
-
         var doc = Http.get("https://lnmtl.com/chapter?page="+ page +"&volumeId="+ volume_id).string();
         var json = JSON.parse(doc);
-
-        if(parseInt(page)==1)
-            total_page_in_vol = parseInt(json.last_page);
-
+        Console.log(json)
+        lastpage = parseInt(json.last_page);
+        Console.log("lastpage="+json.last_page)
         var json_data = json.data
         for(var dt in json_data){
             var data_chapter = json_data[dt];
@@ -32,11 +29,24 @@ function execute(url,page) {
                 name: data_chapter.slug,
                 url: data_chapter.site_url,
                 host: "https://lnmtl.com"
-
             });
-        }        
+        }
+        if(lastpage>1)
+            for(page =2; page<=lastpage; page++){
+                var doc = Http.get("https://lnmtl.com/chapter?page="+ parseString(page) +"&volumeId="+ volume_id).string();
+                var json = JSON.parse(doc);
+
+                var json_data = json.data
+                for(var dt in json_data){
+                    var data_chapter = json_data[dt];
+                    list_chapter.push({
+                        name: data_chapter.slug,
+                        url: data_chapter.site_url,
+                        host: "https://lnmtl.com"
+                    });
+                }
+            }
+        
     }
-    Console.log(total_page_in_vol)
-    if(parseInt(page)<total_page_in_vol) next = parseInt(page) + 1;
-    return Response.success(list_chapter,next)
+    return Response.success(list_chapter)
 }
