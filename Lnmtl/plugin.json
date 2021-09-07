@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "name": "Lnmtl.com",
+    "author": "Cá mụp cắn cáp",
+    "version": 1,
+    "source": "lnmtl.com",
+    "regexp": "(www.)?lnmtl.com/novel/[0-9a-z]", // add sau
+    "description": "Mô tả",
+    "local": "vi-VN",
+    "language": "javascript",
+    "type": "novel"
+  },
+  "script": {
+    "home": "home.js",
+    "genre": "genre.js",
+    "detail": "detail.js",
+    "search": "search.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
+}

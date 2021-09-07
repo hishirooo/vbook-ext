@@ -30,6 +30,15 @@
         "source": "https://www.novelfull.com",
         "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/novelfull/icon.png",
         "description": "Đọc truyện trên trang Novellfull.com"
+      },
+      {
+        "name": "Lnmtl",
+        "author": "Cá Mụp Cắn Cáp",
+        "path": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/Lnmtl/plugin.zip",
+        "version": 1,
+        "source": "https://www.Lnmtl.com",
+        "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/Lnmtl/icon.png",
+        "description": "Đọc truyện trên trang Lnmtl.com"
       }
 
     ]
