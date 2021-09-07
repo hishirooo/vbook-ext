@@ -15,7 +15,7 @@ function execute(url,page) {
                 name: e.select(".media-body h4 a").text(),
                 link: e.select(".media-body h4 a").attr("href"),
                 cover: e.select(".media-left img").attr("src"),
-                description: "Author: " + e.select(".media-body p span").get(0).text()+"<br>"
+                description: "Author: " + e.select(".media-body p span").get(0).text()+"\n"
                 + "Genre: " + doc.select(".media-body ul").get(0).text(),
                 host: "https://lnmtl.com"
 

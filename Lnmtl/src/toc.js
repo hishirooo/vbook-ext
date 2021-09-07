@@ -19,7 +19,6 @@ function execute(url,page) {
         //load page 1
         var doc = Http.get("https://lnmtl.com/chapter?page="+ page +"&volumeId="+ volume_id).string();
         var json = JSON.parse(doc);
-
         const lastpage = parseInt(json.last_page);
         Console.log("lastpage="+ lastpage)
         var json_data = json.data
@@ -58,3 +57,5 @@ function execute(url,page) {
     }
     return Response.success(list_chapter)
 }
+
+///
