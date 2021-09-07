@@ -25,7 +25,7 @@ function execute(url,page) {
         for(var dt in json_data){
             var data_chapter = json_data[dt];
             list_chapter.push({
-                name: data_chapter.slug,
+                name: data_chapter.title,
                 url: data_chapter.site_url,
                 host: "https://lnmtl.com"
             });
@@ -44,7 +44,7 @@ function execute(url,page) {
                 for(var dt2 in json_data2){
                     var data_chapter2 = json_data2[dt2];
                     list_chapter.push({
-                        name: data_chapter2.slug,
+                        name: data_chapter2.title,
                         url: data_chapter2.site_url,
                         host: "https://lnmtl.com"
                     });
