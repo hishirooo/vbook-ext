@@ -8,7 +8,7 @@ function execute(url) {
             host: "https://www.xklxsw.com",
             author: doc.select(".content .fd-list").text().match(/作者：(.+?)\s字数/)[1],
             description: doc.select(".content .fd-list").text().match(/简介：(.*?)[。 |！]《/)[1],
-            detail: doc.select(".content .fd-list").text().match(/简介：(.*?)[。 |！]《/)[1]
+            detail: "Author: " + doc.select(".content .fd-list").text().match(/作者：(.+?)\s字数/)[1]
             
         });
 
