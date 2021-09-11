@@ -39,6 +39,15 @@
         "source": "https://www.Lnmtl.com",
         "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/Lnmtl/icon.png",
         "description": "Đọc truyện trên trang Lnmtl.com"
+      },
+      {
+        "name": "yushuwuy- test",
+        "author": "Cá Mụp Cắn Cáp",
+        "path": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/yushuwuy/plugin.zip",
+        "version": 1,
+        "source": "https://www.yushuwuy.com",
+        "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/yushuwuy/icon.png",
+        "description": "Đọc truyện trên trang Yushuwuy.com"
       }
 
     ]
