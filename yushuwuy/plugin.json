@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "name": "Tên extension",
-    "author": "Tác giả",
+    "name": "Yushuwuy",
+    "author": "Cá mụp cắn cáp",
     "version": 1,
     "source": "URL nguồn truyện",
     "regexp": "Regex khớp URL trang truyện",
@@ -14,7 +14,7 @@
     "home": "home.js",
     //"genre": "genre.js",
     "detail": "detail.js",
-    "search": "search.js",
+    //"search": "search.js",
     "toc": "toc.js",
     "chap": "chap.js"
   }

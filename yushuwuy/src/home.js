@@ -9,6 +9,8 @@ function execute() {
         { title: "本月热榜", input: "2", script: "gentop.js" },
         // top total
         { title: "总热榜", input: "3", script: "gentop.js" },
+        // lasted update
+        { title: "最新小说", input: "https://yushuwuy.com/", script: "new.js" },
         // danh sách truyện 1_page
         // định dạng link gốc https://yushuwuy.com/sort/6_1.html
         { title: "耽美", input: "https://yushuwuy.com/sort/1", script: "gen.js" }, 
