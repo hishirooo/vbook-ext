@@ -3,9 +3,9 @@
     "name": "Yushuwuy",
     "author": "Cá mụp cắn cáp",
     "version": 1,
-    "source": "URL nguồn truyện",
-    "regexp": "Regex khớp URL trang truyện",
-    "description": "Mô tả",
+    "source": "Yushuwuy",
+    "regexp": "https://yushuwuy.com/read/\\d+.html",
+    "description": "Đọc truyện tại yushuwuy.com",
     "local": "vi-VN",
     "language": "javascript",
     "type": "novel"
