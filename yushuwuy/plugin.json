@@ -8,7 +8,7 @@
     "description": "Đọc truyện tại yushuwuy.com",
     "local": "vi-VN",
     "language": "javascript",
-    "type": "novel"
+    "type": "chinese_novel"
   },
   "script": {
     "home": "home.js",
