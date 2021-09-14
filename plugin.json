@@ -48,8 +48,16 @@
         "source": "https://www.yushuwuy.com",
         "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/yushuwuy/icon.png",
         "description": "Đọc truyện trên trang Yushuwuy.com"
+      },
+      {
+        "name": "Otakusan",
+        "author": "Cá Mụp Cắn Cáp",
+        "path": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/otakusan/plugin.zip",
+        "version": 1,
+        "source": "https://otakusan.net/",
+        "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/otakusan/icon.png",
+        "description": "Đọc truyện trên trang Otakusan.net"
       }
-
     ]
     
 }
