@@ -3,7 +3,7 @@
     "name": "Yushuwuy",
     "author": "Cá mụp cắn cáp",
     "version": 1,
-    "source": "Yushuwuy",
+    "source": "https://yushuwuy.com",
     "regexp": "https://yushuwuy.com/read/\\d+.html",
     "description": "Đọc truyện tại yushuwuy.com",
     "local": "vi-VN",
