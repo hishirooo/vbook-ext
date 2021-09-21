@@ -9,30 +9,40 @@ function execute(url) {
             "referer": url
         })
         .string();
+    
     var linkImage = JSON.parse(json).view.split(',')
     var listLinkImage = []
+    var link = ""
+    if(linkImage[0].indexOf('ON')!=-1){
+        var browser = Engine.newBrowser()
+        browser.launch(url, 10000);
 
-    for(var i in linkImage){
-        var link = linkImage[i].match(/(http.+[jpg|png])/)[0]
-        if(link.search('blogtruyen')>0)
-            link = "https://image.otakuscan.net/api/Value/ImageSyncing?url=" + link;
-        listLinkImage.push(link)
+        browser.waitUrl(".*/ExtendContent.*[jpg|png|jpeg]?", 30000);
+        //var urlRQ=browser.urls()
+        var doc = browser.html()
+        browser.close()
+        var listLink =  doc.select("#rendering .image-wraper img.wide-pic")
+        Console.log(listLink.size())
+        for(var i in listLink){
+            Console.log(listLink[i])
+            var image = listLink[i].attr("src")
+            listLinkImage.push(image)
+        }
+        //return Response.success(listLinkImage);
+
     }
-
+    else{
+        Console.log("http")
+        var str_sync ="https://image.otakuscan.net/api/Value/ImageSyncing?url="
+        for(var i in linkImage){
+            if(linkImage[i].indexOf('http')!=-1)
+                link = linkImage[i].match(/(http.+[jpg|png|jpeg])/)[0]
+            // if(linkImage[i].indexOf('ON')!=-1)
+            //     link = str_sync + linkImage[i].match(/.ON(\d+).+[jpg|png|jpeg]/)[0]
+            if(link.search('blogtruyen')>0)
+                link = str_sync + link;
+            listLinkImage.push(link)
+        }
+    }
     return Response.success(listLinkImage);
 }
-
-// function execute(url){
-//     var doc =  Http.get(url).html()
-//     var el = doc.select("#chapter-container #rendering div.image-wraper")
-//     var list_image = []
-//     for(var i = 0; i < el.size(); i++){
-//         var e = el.get(i)
-//         list_image.push(e.select("img").attr("src"))
-
-//     }
-//     return Response.success(list_image)
-// }
-
-//https://image3.otakusan.net/Extend5/Manga/61996/c874ee37-3731-46ce-9e33-05582b421f13_size_900x720.jpg
-// https://image3.otakusan.net/Extend5/Manga/61996/c874ee37-3731-46ce-9e33-05582b421f13_size_900x720.jpg
