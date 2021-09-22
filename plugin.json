@@ -57,6 +57,15 @@
         "source": "https://otakusan.net/",
         "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/otakusan/icon.png",
         "description": "Đọc truyện trên trang Otakusan.net"
+      },
+      {
+        "name": "Komeloli",
+        "author": "Cá Mụp Cắn Cáp",
+        "path": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/komeloli/plugin.zip",
+        "version": 1,
+        "source": "https://komeloli.net/",
+        "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/komeloli/icon.png",
+        "description": "Đọc truyện trên trang Komeloli.net"
       }
     ]
     
