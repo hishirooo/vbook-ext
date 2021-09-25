@@ -8,7 +8,7 @@ function execute(url) {
     return Response.success({
         name: doc.select("h1.comics-title").text(),
         cover: "https://" + cover,
-        host: "",
+        host: "https://mangaxy.com",
         author: doc.select(".created-by a").text(),
         description: doc.select(".manga-info p"),
         detail: "Athor: " + doc.select(".created-by a").text() + "<br>"

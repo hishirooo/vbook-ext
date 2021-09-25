@@ -4,7 +4,7 @@
     "author": "Cá mụp cắn cáp",
     "version": 1,
     "source": "https://mangaxy.com",
-    "regexp": "(www.)?mangaxy.com/[^/]+$",
+    "regexp": "(www.)?mangaxy.com/[^/]+/?$",
     "description": "Đọc truyện tại https://mangaxy.com",
     "local": "vi-VN",
     "language": "javascript",

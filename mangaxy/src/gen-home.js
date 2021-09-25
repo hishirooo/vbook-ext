@@ -16,7 +16,7 @@ function execute(url, page) {
             link: book.select("a.name").attr("href").replace("https://mangaxy.com",""),
             cover: "https://" + cover,
             description: book.select("a.chap").text().replace("C MỚI ","New Chap: "),
-            host: ""      
+            host: "https://mangaxy.com"      
         });
     }
     if (listBook.length == 0) next = ""; 
