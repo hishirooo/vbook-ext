@@ -4,11 +4,12 @@
     "author": "Cá mụp cắn cáp",
     "version": 1,
     "source": "https://komeloli.net/",
-    "regexp": "(www.)?komeloli.net/manga/[a-z].+$",
+    "regexp": "(www.)?komeloli.net/manga/[a-z].+/?$",
     "description": "Đọc truyện tại Komeloli.net",
     "local": "vi-VN",
     "language": "javascript",
-    "type": "comic"
+    "type": "comic",
+    "tag": "nsfw"
   },
   "script": {
     "home": "home.js",
