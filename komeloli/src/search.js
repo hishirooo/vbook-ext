@@ -8,7 +8,7 @@ function execute(key, page) {
         listBook.push({
             name: book.select(".info-botttom .series-title h3 a").attr("title"),
             link: book.select(".info-botttom .series-title h3 a").attr("href").replace("https://komeloli.net",""),
-            cover: book.select(".a6-ratio img").attr("data-src"),
+            cover: book.select(".a6-ratio img").attr("data-src")|"https://i.imgur.com/FbaKQ0k.jpg",
             description: book.select(".text-truncate span").text(),
             host: "https://komeloli.net"
         });

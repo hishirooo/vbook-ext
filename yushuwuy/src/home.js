@@ -16,6 +16,6 @@ function execute() {
         { title: "耽美", input: "https://yushuwuy.com/sort/1", script: "gen.js" }, 
         { title: "高辣文", input: "https://yushuwuy.com/sort/6", script: "gen.js" }, 
         { title: "言情", input: "https://yushuwuy.com/sort/5", script: "gen.js" }, 
-        { title: "高辣文", input: "https://yushuwuy.com/sort/2", script: "gen.js" }, 
+        { title: "百合", input: "https://yushuwuy.com/sort/2", script: "gen.js" }, 
     ]);
 }

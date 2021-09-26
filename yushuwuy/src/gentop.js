@@ -12,7 +12,7 @@ function execute(url) {
             gentop.push({
                 name: book.select("li a").text(),
                 link: book.select("li a").attr("href"),
-                cover: "",
+                cover: "https://i.imgur.com/FbaKQ0k.jpg",
                 description: "Genre: " + book.select("li").text().match(/【(.+)】/)[1],
                 host: 'https://yushuwuy.com'
             });

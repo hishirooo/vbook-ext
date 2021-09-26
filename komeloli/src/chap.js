@@ -43,7 +43,3 @@ var CryptoJSAesJson = {
         e
     }
 }
-
-// Rồi giờ xem nó mã hoá bằng gì. Ở đây thì code nhiều thì biết nó mã hoá bằng cryptojs nên đi tìm cái thư viện đó đi
-
-// À thiếu một hàm nữa

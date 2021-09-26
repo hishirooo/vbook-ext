@@ -7,16 +7,17 @@ function execute(url,page) {
     var next = doc.select("#indexselect option").last().text().match(/第(\d+)页/)[1];
     next = parseInt(next)
     if(doc){
-        var all_book = doc.select("body#nr_body div").get(2).select("div");
+        var all_book = doc.select(".common-bookele");
         
         for(var i in all_book){
+            Console.log(all_book.size())
             var book = all_book[i];
-            Console.log(book.select("h3 a").attr("href"))
+            //Console.log(book.select("h3 a").attr("href"))
             gen.push({
                 name: book.select("h3 a").text(),
                 link: book.select("h3 a").attr("href"),
-                cover: "",
-                description: book.select("span a").text(),
+                cover: "https://i.imgur.com/FbaKQ0k.jpg",
+                description: book.select(".lastupdate").text(),
                 host: 'https://yushuwuy.com'
             });
         }

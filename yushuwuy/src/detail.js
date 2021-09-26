@@ -6,7 +6,7 @@ function execute(url) {
         //return Response.success(doc.select(".info-holder .info div").get(0));
         return Response.success({
             name: el.select(".yzwHead .h_nav_items li").get(1).text(),
-            cover: "",
+            cover: "https://i.imgur.com/FbaKQ0k.jpg",
             host: "https://yushuwuy.com",
             author: el.select("#novelMain .lb_fm table tbody tr td div").get(0).select("h2 a").text(),
             ///html/body/div[4]/div[3]/div/pre/p

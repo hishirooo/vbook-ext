@@ -13,7 +13,7 @@ function execute(url) {
             lasted_update.push({
                 name: book.select("a").text(),
                 link: book.select("a").attr("href"),
-                cover: "",
+                cover: "https://i.imgur.com/FbaKQ0k.jpg",
                 description: book.select("div").text().match(/(作者：.+) (类型：.+) (时间：.+)/)[1] + "<br>" + 
                 book.select("div").text().match(/(作者：.+) (类型：.+) (时间：.+)/)[2] + "<br>" + 
                 book.select("div").text().match(/(作者：.+) (类型：.+) (时间：.+)/)[3],

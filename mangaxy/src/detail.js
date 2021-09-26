@@ -4,7 +4,7 @@ function execute(url) {
     if(checkCover.indexOf('jpg')!=-1|checkCover.indexOf('png')!=-1|checkCover.indexOf('jpeg')!=-1)
         cover = checkCover.match(/image: url\('\/\/(.+)\'\)/)[1]
     else
-        cover = ""
+        cover = "i.imgur.com/FbaKQ0k.jpg"
     return Response.success({
         name: doc.select("h1.comics-title").text(),
         cover: "https://" + cover,
