@@ -11,7 +11,7 @@ function execute(url) {
         host: "https://bato.to",
         author: author,
         description: doc.select(".limit-html").text(),
-        detail: "Rank: "+ rank + "<br>" + "Author: " + author + "<br>" + genre
+        detail: "Rank: "+ rank + "<br>" + "Author: " + author + "<br>" + "Genre: " + genre
     
     });
 }
