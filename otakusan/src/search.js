@@ -17,5 +17,5 @@ for(var i in element){
     }
     if (listBook.length == 0) next = ""; 
     else next = (parseInt(page) + 1).toString();
-    return Response.success(listBook)
+    return Response.success(listBook,next)
 }
