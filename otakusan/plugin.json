@@ -4,7 +4,7 @@
     "author": "Cá mụp cắn cáp",
     "version": 1,
     "source": "https://otakusan.net/",
-    "regexp": "https://otakusan.net/manga-detail/(\\d+)/[0-9A-Za-z].+$",
+    "regexp": "https://otakusan.net/manga-detail/(\\d+)/[0-9a-z].+$",
     "description": "Đọc truyện tại Otakusan.net",
     "local": "vi-VN",
     "language": "javascript",
