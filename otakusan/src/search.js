@@ -1,5 +1,5 @@
 function execute(key, page) {
-    if(!page) page = "1"
+
     var doc =  Http.get("https://otakusan.net/Home/Search?search=" + key).html()
 
     var listBook = []
@@ -15,7 +15,6 @@ for(var i in element){
         });
         
     }
-    if (listBook.length == 0) next = ""; 
-    else next = (parseInt(page) + 1).toString();
-    return Response.success(listBook,next)
+
+    return Response.success(listBook)
 }
