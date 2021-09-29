@@ -87,6 +87,16 @@
         "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/256wxc/icon.png",
         "description": "Đọc truyện trên trang 256wxc.com (256wenku)"
       }
+      ,
+      {
+        "name": "Bato.to",
+        "author": "Cá Mụp Cắn Cáp",
+        "path": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/bato/plugin.zip",
+        "version": 1,
+        "source": "https://bato.to",
+        "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/bato/icon.png",
+        "description": "Đọc truyện trên trang https://bato.to"
+      }
     ]
     
 }

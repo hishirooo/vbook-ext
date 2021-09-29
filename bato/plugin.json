@@ -1,0 +1,22 @@
+{
+  "metadata": {
+    "name": "Bato.to",
+    "author": "Cá mụp cắn cáp",
+    "version": 1,
+    "source": "https://bato.to/",
+    "regexp": "(www.)?bato.to/series/(\\d+)/[A-Za-z].+/?$",
+    "description": "Đọc truyện tại https://bato.to/",
+    "local": "vi-VN",
+    "language": "javascript",
+    "type": "comic",
+    "tag": "nsfw"
+  },
+  "script": {
+    "home": "home.js",
+    "genre": "genre.js",
+    "detail": "detail.js",
+    "search": "search.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
+}
