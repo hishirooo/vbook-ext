@@ -1,13 +1,20 @@
 function execute(url, page) {
-    if(!page) page = "2"
+    if(!page) page = "1"
 
     var listBook = []
-
-    var doc = Http.get(url + page ).html()
-    //var doc = Http.get(url).params({page: page}).string()
-    var element = doc.select(".series-list > div.item")
-    //Console.log(element.size())
     
+    if(page=="1"){
+        var doc = Http.get( url + page ).html()
+        //var doc = Http.get(url).params({page: page}).string()
+        var element = doc.select(".series-list > div.item")        
+    }
+    else{
+        var doc = Http.get( url + page ).string()
+        var html = JSON.parse(doc).res.html
+        doc = Html.parse(html)
+        var element = doc.select(".line-b")   
+    }
+
     for(var i in element){
         var book = element[i]
         listBook.push({
@@ -17,13 +24,10 @@ function execute(url, page) {
             description: book.select(".item-genre span").text().replace(/ /g,', '),
             host: "https://bato.to"      
         });
-    }
-
+    }    
 
     if (listBook.length == 0) next = ""; 
     else next = (parseInt(page) + 1).toString();
 
     return Response.success(listBook,next)
 }
-
-//https://bato.to/series/85691/why-the-king-needs-a-secretary
