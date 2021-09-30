@@ -2,7 +2,7 @@
   "metadata": {
     "name": "Bato.to",
     "author": "Cá mụp cắn cáp",
-    "version": 1,
+    "version": 2,
     "source": "https://bato.to/",
     "regexp": "(www.)?bato.to/series/(\\d+)/[A-Za-z].+/?$",
     "description": "Đọc truyện tại https://bato.to/",
