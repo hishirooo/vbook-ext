@@ -96,7 +96,17 @@
         "source": "https://bato.to",
         "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/bato/icon.png",
         "description": "Đọc truyện trên trang https://bato.to"
+      },
+      {
+        "name": "Mangapl.com",
+        "author": "Cá Mụp Cắn Cáp",
+        "path": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/mangapl/plugin.zip",
+        "version": 2,
+        "source": "https://mangapl.com/",
+        "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/mangapl/icon.png",
+        "description": "Đọc truyện trên trang https://mangapl.com/"
       }
+
     ]
     
 }
