@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "name": "ja.mangatoro",
+    "author": "Cá mụp cắn cáp",
+    "version": 1,
+    "source": "https://ja.mangatoro.com/",
+    "regexp": "(www.)?ja.mangatoro.com/manga/[A-Za-z0-9].+/?",
+    "description": "Đọc truyện tại https://ja.mangatoro.com/",
+    "local": "vi-VN",
+    "language": "javascript",
+    "type": "comic"
+  },
+  "script": {
+    "home": "home.js",
+    "genre": "genre.js",
+    "detail": "detail.js",
+    "search": "search.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
+}
