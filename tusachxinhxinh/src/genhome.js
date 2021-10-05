@@ -5,13 +5,9 @@ function execute(url, page) {
     var orderby = "meta_value_num"
     var order = "desc"
     var meta_key = ""
-    if(url=='latest'){
-        meta_key = "_latest_update"
-    }
+    if(url=='latest'){ meta_key = "_latest_update" }
     else{
-        if(url=='trending'){
-            meta_key = "_wp_manga_week_views_value"
-        }
+        if(url=='trending'){ meta_key = "_wp_manga_week_views_value" }
         else{
             if(url=='a-z'){
                 orderby = "post_title"
