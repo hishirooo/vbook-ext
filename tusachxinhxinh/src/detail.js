@@ -1,17 +1,17 @@
 function execute(url) {
     var doc = Http.get(url + "/").html()
     //----------------
-    var ratingCount = doc.select(".vote-details > span")[1].text() + "<br>"
+    var ratingCount = doc.select(".vote-details > span")[1].text()
 
-    var otherName =  doc.select(".post-content_item")[2].text() + "<br>"
+    var otherName =  doc.select(".post-content_item")[2].text()
     if(otherName.indexOf('Other name: ')==-1)
         otherName = ""
     var content = doc.select(".site-content > div > div")[1].select(".summary__content").text()
  
-    var rank = doc.select(".post-content_item")[1].text() + "<br>"
+    var rank = doc.select(".post-content_item")[1].text()
 
     var  author = doc.select(".author-content a").text()
-    if(author=="") author ="Updating" + "<br>"
+    if(author=="") author ="Updating"
 
     var ongoing = doc.select(".post-status").text()
     //----------------
@@ -23,6 +23,6 @@ function execute(url) {
         author : author,
         description : content,
         ongoing : ongoing.indexOf('Đang tiến hành')!=-1,
-        detail :"Rate: " + ratingCount + rank + otherName + "Author: " + author + "<br>" + "Status: " + ongoing
+        detail :"Rate: " + ratingCount + "<br>" + rank + "<br>" + otherName + "<br>" + "Author: " + author
     })
 }

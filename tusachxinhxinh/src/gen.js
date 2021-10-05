@@ -1,5 +1,5 @@
 function execute(url, page) {
-    var genre = url.match(/the-loai.(.+)\//)[1]
+    var genre = url.match(/the-loai.(.+)/)[1]
     if(!page) page="0"
     var doc = Http.post("https://tusachxinhxinh.com/wp-admin/admin-ajax.php")
     .params({
