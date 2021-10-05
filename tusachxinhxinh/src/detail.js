@@ -23,6 +23,6 @@ function execute(url) {
         author : author,
         description : content,
         ongoing : ongoing.indexOf('Đang tiến hành')!=-1,
-        detail :"Rate: " + ratingCount + rank + otherName + "Author: " + author + "<br>Status: " + ongoing
+        detail :"Rate: " + ratingCount + rank + otherName + "Author: " + author + "<br>" + "Status: " + ongoing
     })
 }
