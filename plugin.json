@@ -123,6 +123,15 @@
         "source": "https://vcomycs.com/",
         "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/vcomycs/icon.png",
         "description": "Đọc truyện trên trang https://vcomycs.com/"
+      },
+      {
+        "name": "Tủ sách xinh xinh",
+        "author": "Cá Mụp Cắn Cáp",
+        "path": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/tusachxinhxinh/plugin.zip",
+        "version": 1,
+        "source": "https://tusachxinhxinh.com/",
+        "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/tusachxinhxinh/icon.png",
+        "description": "Đọc truyện trên trang https://tusachxinhxinh.com/"
       }
 
     ]
