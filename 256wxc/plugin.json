@@ -2,9 +2,9 @@
   "metadata": {
     "name": "256wxc.com",
     "author": "Cá mụp cắn cáp",
-    "version": 1,
+    "version": 2,
     "source": "https://www.256wxc.com/",
-    "regexp": "https://www.256wxc.com/read/(\\d+)/?",
+    "regexp": "https://www.(256wxc|256wenku).com/read/(\\d+)/?",
     "description": "Mô tả",
     "local": "vi-VN",
     "language": "javascript",
