@@ -18,7 +18,7 @@ function execute(url,page) {
     var list_chapter = []
     chapters.forEach(chapter => list_chapter.push({
             name: chapter.name,
-            url: url + "chuong-" + chapter.chapter_index,
+            url: url + "/chuong-" + chapter.chapter_index,
             host: "http://webtruyenonlinez.com"
         })
     )

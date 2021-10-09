@@ -3,9 +3,9 @@ function execute() {
     var genres = doc.select(".navbar-nav .dropdown-menu")[0].select("li a")
     var listGenre = []
     genres.forEach(gen => listGenre.push({
-            title : gen.text(),
-            input : gen.attr("href"),
-            srcipt: "gen.js"
+            title: gen.text(),
+            input: gen.attr("href"),
+            script: "gen.js"
         })
     )
     return Response.success(listGenre)
