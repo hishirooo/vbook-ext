@@ -5,7 +5,7 @@ function execute(url,page) {
     var doc = Http.post("http://webtruyenonlinez.com/index.php?truyen/fff.20982/get-chapters")
     .params({
         "book_id": idBook,
-        "index": "-1",
+        "index": page,
         "type": "next",
         "_xfRequestUri": requestUrl,
         "_xfNoRedirect": "1",
