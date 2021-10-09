@@ -2,10 +2,10 @@
   "metadata": {
     "name": "Webtruyenonlinez.com",
     "author": "Cá mụp cắn cáp",
-    "version": 3,
+    "version": 4,
     "source": "http://webtruyenonlinez.com/",
     "regexp": "(www.)?webtruyenonlinez.com/truyen/[^/].+/?$",
-    "description": "Fix lỗi thiếu chương",
+    "description": "Fix lỗi thiếu chương lần nữa =)) ",
     "local": "vi-VN",
     "language": "javascript",
     "type": "novel"
