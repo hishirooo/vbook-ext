@@ -1,11 +1,10 @@
 function execute(url, page) {
-    //http://webtruyenonlinez.com/the-loai/do-thi.38/?page=4&type=view_count
+
     if(!page) page = "1"
 
     var listBook =[]
 
     if(url.indexOf('page')== -1){
-
         var doc =  Http.get("http://webtruyenonlinez.com/" + url + "?page=" + page + "&type=view_count").html()
         var books = doc.select(".pageContent .cat-item")
 
@@ -41,8 +40,9 @@ function execute(url, page) {
             })
         })
     }
-    
-    return Response.success(listBook)
+    if (listBook.length == 0) next = ""; 
+    else next = (parseInt(page) + 1).toString();
+    return Response.success(listBook,next)
 }
 
 //http://webtruyenonlinez.com/truyen/nam-than-o-phong-ben-canh.2630/
