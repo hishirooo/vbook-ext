@@ -2,10 +2,10 @@
   "metadata": {
     "name": "Webtruyenonlinez.com",
     "author": "Cá mụp cắn cáp",
-    "version": 2,
+    "version": 3,
     "source": "http://webtruyenonlinez.com/",
     "regexp": "(www.)?webtruyenonlinez.com/truyen/[^/].+/?$",
-    "description": "Đọc truyện online tại http://webtruyenonlinez.com/",
+    "description": "Fix lỗi thiếu chương",
     "local": "vi-VN",
     "language": "javascript",
     "type": "novel"
