@@ -132,6 +132,15 @@
         "source": "https://tusachxinhxinh.com/",
         "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/tusachxinhxinh/icon.png",
         "description": "Đọc truyện trên trang https://tusachxinhxinh.com/"
+      },
+      {
+        "name": "Webtruyen Online Z",
+        "author": "Cá Mụp Cắn Cáp",
+        "path": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/webtruyenonlinez/plugin.zip",
+        "version": 1,
+        "source": "http://webtruyenonlinez.com/",
+        "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/webtruyenonlinez/icon.png",
+        "description": "Đọc truyện trên trang http://webtruyenonlinez.com/"
       }
 
     ]
