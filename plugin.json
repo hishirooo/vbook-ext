@@ -138,10 +138,20 @@
         "author": "Cá Mụp Cắn Cáp",
         "path": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/webtruyenonlinez/plugin.zip",
         "version": 4,
-        "source": "http://webtruyenonlinez.com/",
+        "source": "http://truyen210.net /",
         "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/webtruyenonlinez/icon.png",
         "description": "Đọc truyện trên trang http://webtruyenonlinez.com/"
+      },
+      {
+        "name": "Truyện 210",
+        "author": "Cá Mụp Cắn Cáp",
+        "path": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/truyen210/plugin.zip",
+        "version": 1,
+        "source": "http://truyen210.net/",
+        "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/truyen210/icon.png",
+        "description": "Đọc truyện trên trang truyen210.net"
       }
+
 
     ]
     
