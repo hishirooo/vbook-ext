@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "name": "Dichtruyen Org",
+    "author": "Cá mụp cắn cáp",
+    "version": 1,
+    "source": "https://dichtruyen.org/",
+    "regexp": "(www.)?dichtruyen.org/truyen/[^/]+/?$",
+    "description": "Support get chapter : nhocconsr",
+    "local": "vi-VN",
+    "language": "javascript",
+    "type": "comic"
+  },
+  "script": {
+    "home": "home.js",
+    "genre": "genre.js",
+    "detail": "detail.js",
+    "search": "search.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
+}
