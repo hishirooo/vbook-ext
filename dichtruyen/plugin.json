@@ -2,10 +2,10 @@
   "metadata": {
     "name": "Dichtruyen Org",
     "author": "Cá mụp cắn cáp",
-    "version": 1,
+    "version": 2,
     "source": "https://dichtruyen.org/",
     "regexp": "(www.)?dichtruyen.org/truyen/[^/]+/?$",
-    "description": "Support get chapter : nhocconsr",
+    "description": "Sửa lỗi get truyện",
     "local": "vi-VN",
     "language": "javascript",
     "type": "comic"

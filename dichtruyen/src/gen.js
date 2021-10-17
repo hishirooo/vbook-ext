@@ -2,7 +2,7 @@ function execute(url, page) {
 	if(!page) page = "1"
 	var doc =  Http.get(url + "/page-" + page + "/").html()
     
-	var books =  doc.select(".mcol_ct > .mcol_pos")
+	var books =  doc.select(".m_l_col .mcol_ct > .mcol_pos")
 	var listBook = []
 
 	books.forEach(book => listBook.push({
