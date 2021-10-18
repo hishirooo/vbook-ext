@@ -1,11 +1,23 @@
 function execute(url) {
     var doc = Http.get(url + "/").html()
-    var chapters = doc.select(".listchap li .crop-text a")
+    var checkListChapter = doc.select("#dsc")
     var listchapter = []
+    if(checkListChapter!=""){
+        var chapters = doc.select(".listchap li .crop-text a")
+    }
+    else{
+        var idBook = doc.toString().match(/data-id="(.+)" data-slug/)[1]
+        var docHtml = Http.post("https://truyenkk1.com/wp-admin/admin-ajax.php").params({
+            "action": "all_chap",
+            "id": idBook
+        }).html()
+        var chapters = docHtml.select("a")
+    }
     chapters.forEach(chap => listchapter.push({
         name: chap.text(),
         url: chap.attr("href"),
         host: "https://truyenkk1.com"
     }))
     return Response.success(listchapter)
+
 }
