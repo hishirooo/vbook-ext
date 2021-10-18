@@ -1,0 +1,22 @@
+{
+  "metadata": {
+    "name": "HentaiVV",
+    "author": "Cá mụp cắn cáp",
+    "version": 1,
+    "source": "https://hentaivv.com/",
+    "regexp": "(www.)?hentaivv.com/truyen/[^/]+/?$",
+    "description": "Đọc truyện hentai tại hentaivv.com",
+    "local": "vi-VN",
+    "language": "javascript",
+    "type": "comic",
+    "tag" : " nfsw"
+  },
+  "script": {
+    "home": "home.js",
+    "genre": "genre.js",
+    "detail": "detail.js",
+    "search": "search.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
+}
