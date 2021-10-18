@@ -2,7 +2,7 @@
   "metadata": {
     "name": "HentaiVV",
     "author": "Cá mụp cắn cáp",
-    "version": 1,
+    "version": 2,
     "source": "https://hentaivv.com/",
     "regexp": "(www.)?hentaivv.com/truyen/[^/]+/?$",
     "description": "Đọc truyện hentai tại hentaivv.com",
