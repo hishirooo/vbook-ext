@@ -1,0 +1,20 @@
+{
+  "metadata": {
+    "name": "51txt.cc",
+    "author": "Cá mụp cắn cáp",
+    "version": 1,
+    "source": "https://www.51txt.cc/",
+    "regexp": "(www.)?51txt.cc/info/(\\d+).html",
+    "description": "Đọc truyện tiếng trung tại https://www.51txt.cc/",
+    "local": "vi-VN",
+    "language": "javascript",
+    "type": "chinese_novel"
+  },
+  "script": {
+    "home": "home.js",
+    "genre": "genre.js",
+    "detail": "detail.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
+}
