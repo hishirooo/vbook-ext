@@ -2,14 +2,14 @@
   "metadata": {
     "name": "HentaiVV",
     "author": "Cá mụp cắn cáp",
-    "version": 2,
+    "version": 3,
     "source": "https://hentaivv.com/",
     "regexp": "(www.)?hentaivv.com/truyen/[^/]+/?$",
     "description": "Đọc truyện hentai tại hentaivv.com",
     "local": "vi-VN",
     "language": "javascript",
     "type": "comic",
-    "tag" : "nfsw"
+    "tag" : "nsfw"
   },
   "script": {
     "home": "home.js",

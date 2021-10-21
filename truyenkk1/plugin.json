@@ -2,14 +2,14 @@
   "metadata": {
     "name": "TruyenKK",
     "author": "Cá mụp cắn cáp",
-    "version": 3,
+    "version": 4,
     "source": "https://truyenkk1.com/",
     "regexp": "(www.)?truyenkk1.com/truyen/[^/]+/?$",
     "description": "Truyện chữ, truyện tranh tùm lum...",
     "local": "vi-VN",
     "language": "javascript",
     "type": "comic",
-    "tag" : "nfsw"
+    "tag" : "nsfw"
   },
   "script": {
     "home": "home.js",
