@@ -8,7 +8,7 @@ function execute(url) {
         author : author,
         description : doc.select(".info-main-intro").text(),
         detail : doc.select(".w100.dispc span a").text() + "<br>"
-        + doc.select(".w100.dispc > a").text() 
+        + "Author: " + author
              
     })
     

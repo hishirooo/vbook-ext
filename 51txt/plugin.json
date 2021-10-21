@@ -2,7 +2,7 @@
   "metadata": {
     "name": "51txt.cc",
     "author": "Cá mụp cắn cáp",
-    "version": 1,
+    "version": 2,
     "source": "https://www.51txt.cc/",
     "regexp": "(www.)?51txt.cc/info/(\\d+).html",
     "description": "Đọc truyện tiếng trung tại https://www.51txt.cc/",
