@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "name": "Box Truyện Tranh",
+    "author": "Cá mụp cắn cáp",
+    "version": 1,
+    "source": "https://boxtruyentranh.net/",
+    "regexp": "(www.)?boxtruyentranh.net/[^/].+/?$",
+    "description": "Đọc truyện tranh tại boxtruyentranh.net",
+    "local": "vi-VN",
+    "language": "javascript",
+    "type": "comic"
+  },
+  "script": {
+    "home": "home.js",
+    "genre": "genre.js",
+    "detail": "detail.js",
+    "search": "search.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
+}
