@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "name": "Truyện Đẹp .Net",
+    "author": "cá mụp cắn cáp",
+    "version": 1,
+    "source": "https://truyendep.net/",
+    "regexp": "(www.)?truyendep.net/[^/].+/?",
+    "description": "Đọc truyện tranh tại https://truyendep.net/",
+    "local": "vi-VN",
+    "language": "javascript",
+    "type": "comic"
+  },
+  "script": {
+    "home": "home.js",
+    "genre": "genre.js",
+    "detail": "detail.js",
+    "search": "search.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
+}

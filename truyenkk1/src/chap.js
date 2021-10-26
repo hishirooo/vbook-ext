@@ -1,5 +1,5 @@
 function execute(url) {
-    var doc = Http.get(url).html()
+    var doc = Http.get(url+ "/").html()
     var check_content = String(doc.select(".reading")).indexOf("<br>")!=-1
     Console.log(check_content)
     var images = doc.select(".img-center")
