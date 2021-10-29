@@ -1,18 +1,18 @@
 {
   "metadata": {
-    "name": "Hentaifox.com",
+    "name": "Truyện Conect .Com",
     "author": "Cá mụp cắn cáp",
-    "version": 3,
-    "source": "https://hentaifox.com/",
-    "regexp": "(www.)?hentaifox.com/gallery/(\\d+)/?$",
-    "description": "Fix lỗi load chapter",
+    "version": 1,
+    "source": "https://truyenconect.com/",
+    "regexp": "(www.)?truyenconect.com/truyen/[^.].+.html",
+    "description": "Mô tả",
     "local": "vi-VN",
     "language": "javascript",
-    "type": "comic",
-    "tag": "nsfw"
+    "type": "novel"
   },
   "script": {
     "home": "home.js",
+    "genre": "genre.js",
     "detail": "detail.js",
     "search": "search.js",
     "toc": "toc.js",
