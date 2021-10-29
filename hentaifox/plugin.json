@@ -2,10 +2,10 @@
   "metadata": {
     "name": "Hentaifox.com",
     "author": "Cá mụp cắn cáp",
-    "version": 1,
+    "version": 2,
     "source": "https://hentaifox.com/",
     "regexp": "(www.)?hentaifox.com/gallery/(\\d+)/?$",
-    "description": "Truyện hentai",
+    "description": "Fix lỗi load chapter",
     "local": "vi-VN",
     "language": "javascript",
     "type": "comic",
