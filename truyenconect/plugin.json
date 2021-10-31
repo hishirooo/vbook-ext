@@ -5,7 +5,7 @@
     "version": 1,
     "source": "https://truyenconect.com/",
     "regexp": "(www.)?truyenconect.com/truyen/[^.].+.html",
-    "description": "Mô tả",
+    "description": "Đọc truyện tại Truyen Conect",
     "local": "vi-VN",
     "language": "javascript",
     "type": "novel"

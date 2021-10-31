@@ -221,6 +221,16 @@
         "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/boxtruyentranh/icon.png",
         "description": "Đọc truyện tranh tại https://boxtruyentranh.net/"
       }
+      ,
+      {
+        "name": "Truyen Conect .Com",
+        "author": "Cá Mụp Cắn Cáp",
+        "path": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/truyenconect/plugin.zip",
+        "version": 1,
+        "source": "https://truyenconect.com/",
+        "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/truyenconect/icon.png",
+        "description": "Đọc truyện tranh tại https://truyenconect.com/"
+      }
 
 
     ]
