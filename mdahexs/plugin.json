@@ -1,0 +1,20 @@
+{
+  "metadata": {
+    "name": "M.dahexs .Net",
+    "author": "Cá mụp cắn cáp",
+    "version": 1,
+    "source": "https://m.dahexs.net/",
+    "regexp": "(www.)?m.dahexs.net/(\\d+).+/?$",
+    "description": "Truyện tiếng trung",
+    "local": "vi-VN",
+    "language": "javascript",
+    "type": "chinese_novel"
+  },
+  "script": {
+    "home": "home.js",
+    "genre": "genre.js",
+    "detail": "detail.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
+}

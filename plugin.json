@@ -229,7 +229,17 @@
         "version": 2,
         "source": "https://truyenconect.com/",
         "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/truyenconect/icon.png",
-        "description": "Đọc truyện tranh tại https://truyenconect.com/"
+        "description": "Đọc truyện tại https://truyenconect.com/"
+      }
+      ,
+      {
+        "name": "m Dahexs .Net",
+        "author": "Cá Mụp Cắn Cáp",
+        "path": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/dahexs/plugin.zip",
+        "version": 1,
+        "source": "https://m.dahexs.net/",
+        "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/dahexs/icon.png",
+        "description": "Đọc truyện tại https://m.dahexs.net/"
       }
 
 
