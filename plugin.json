@@ -235,10 +235,10 @@
       {
         "name": "m Dahexs .Net",
         "author": "Cá Mụp Cắn Cáp",
-        "path": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/dahexs/plugin.zip",
+        "path": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/mdahexs/plugin.zip",
         "version": 1,
         "source": "https://m.dahexs.net/",
-        "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/dahexs/icon.png",
+        "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/mdahexs/icon.png",
         "description": "Đọc truyện tại https://m.dahexs.net/"
       }
 
