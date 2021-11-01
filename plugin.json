@@ -241,16 +241,16 @@
         "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/mdahexs/icon.png",
         "description": "Đọc truyện tại https://m.dahexs.net/"
       }
-      ,
-      {
-        "name": "m.Sxyxht.Com",
-        "author": "Cá Mụp Cắn Cáp",
-        "path": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/sxyxht/plugin.zip",
-        "version": 1,
-        "source": "https://m.sxyxht.com/",
-        "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/sxyxht/icon.png",
-        "description": "Đọc truyện tại https://m.sxyxht.com/"
-      }
+    //   ,
+    //   {
+    //     "name": "m.Sxyxht.Com",
+    //     "author": "Cá Mụp Cắn Cáp",
+    //     "path": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/sxyxht/plugin.zip",
+    //     "version": 1,
+    //     "source": "https://m.sxyxht.com/",
+    //     "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/sxyxht/icon.png",
+    //     "description": "Đọc truyện tại https://m.sxyxht.com/"
+    //   }
 
 
     ]
