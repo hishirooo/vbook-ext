@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "name": "Sxyxht.com",
+    "author": "Cá mụp cắn cáp",
+    "version": 1,
+    "source": "https://m.sxyxht.com/",
+    "regexp": "(www.)?(m.)?sxyxht.com/[^/]+/[^/].+/?$",
+    "description": "Truyện tiếng trung",
+    "local": "vi-VN",
+    "language": "javascript",
+    "type": "chinese_novel"
+  },
+  "script": {
+    "home": "home.js",
+    "genre": "genre.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
+}
