@@ -11,7 +11,7 @@ function execute(url) {
     var checkNext = doc.select(".content .content_btn")[1].select(".ptm-col-xs-3")[1].select("a").attr("href").split("_").length
 
     while(numPage==0||checkNext!=2){
-        doc = Http.get(newUrl[1] + "_" + "1" + ".html").html()
+        doc = Http.get(newUrl[1] + "_" + page + ".html").html()
         
         doc.select('p').remove()
         doc.select('script').remove()
@@ -30,8 +30,7 @@ function execute(url) {
             page = (parseInt(page) + 1).toString()
             numPage +=1
             checkNext = doc.select(".content .content_btn")[1].select(".ptm-col-xs-3")[1].select("a").attr("href").split("_").length
-            return Response.success(numPage==0||checkNext!=2)
-            if(checkNext==2) break 
+
         }
 
     }
