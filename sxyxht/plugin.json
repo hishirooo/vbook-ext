@@ -2,9 +2,9 @@
   "metadata": {
     "name": "Sxyxht.com",
     "author": "Cá mụp cắn cáp",
-    "version": 1,
+    "version": 2,
     "source": "https://m.sxyxht.com/",
-    "regexp": "(www.)?m.sxyxht.com/dushu/(\\d+)/?$",
+    "regexp": "(www.)?(m.)?sxyxht.com/dushu/(\\d+)/?$",
     "description": "Truyện tiếng trung",
     "local": "vi-VN",
     "language": "javascript",
