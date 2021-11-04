@@ -4,7 +4,9 @@ function execute(url) {
     var listchapter = []
     if(checkListChapter!=""){
         var phantrang = doc.select("#id_pagination")
+        
         if(phantrang!=""){
+
             var totalPage = phantrang.select("li").size()-1
             var chapters = doc.select(".listchap li .crop-text a")
             //- page 1
@@ -14,7 +16,7 @@ function execute(url) {
                 host: "https://truyenkk1.com"
             }))    
             for( var i=2; i<=totalPage; i++){
-                var docPage = Http.get(url + i +"/#dsc").html()
+                var docPage = Http.get(url + "/" + i +"/#dsc").html()
                 var chapters2 = docPage.select(".listchap li .crop-text a")
                 chapters2.forEach(chap2 => listchapter.push({
                 name: chap2.text(),
@@ -25,6 +27,7 @@ function execute(url) {
             //return Response.success(totalPage)
         }
         else{
+
             var chapters = doc.select(".listchap li .crop-text a")
             chapters.forEach(chap => listchapter.push({
                 name: chap.text(),
@@ -34,6 +37,7 @@ function execute(url) {
         }
     }
     else{
+
         var idBook = doc.toString().match(/data-id="(.+)" data-slug/)[1]
         var docHtml = Http.post("https://truyenkk1.com/wp-admin/admin-ajax.php").params({
             "action": "all_chap",
