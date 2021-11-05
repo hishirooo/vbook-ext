@@ -1,0 +1,22 @@
+{
+  "metadata": {
+    "name": "Allporncomic .Com",
+    "author": "Cá mụp cắn cáp",
+    "version": 1,
+    "source": "https://allporncomic.com/",
+    "regexp": "(www.)?allporncomic.com/[^/].+/[^/].+/?$",
+    "description": "Truyện hentai",
+    "local": "vi-VN",
+    "language": "javascript",
+    "type": "comic",
+    "tag": "nsfw"
+  },
+  "script": {
+    "home": "home.js",
+    "genre": "genre.js",
+    "detail": "detail.js",
+    "search": "search.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
+}
