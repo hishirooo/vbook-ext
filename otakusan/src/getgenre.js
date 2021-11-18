@@ -1,8 +1,8 @@
 function execute(url,page) {
-    var page = 1
+    if(!page) page = 1
     var genreID = url.match(/(\d+)/)[1]
-    var offset = (page-1)*24
-    var doc = Http.get("https://otakusan.net/Genre/MangaGenrePartial?id="+genreID+"&offset="+offset+"&pagesize=24&lang=vn&key").html()
+    var doc = Http.get("https://otakusan.net/Genre/MangaGenrePartial?id="+genreID+"&offset="+((page-1)*24).toString()+"&pagesize=24&lang=vn&key").html()
+    //Console.log((page-1)*24)
     var listBook = []
     var allBook = doc.select('.picture-card')
     for(var i in allBook){
@@ -16,7 +16,7 @@ function execute(url,page) {
         });
     }
     if (listBook.length == 0) next = ""; 
-    else next = (page + 1).toString()
+    else next = parseInt(page) + 1
 
     return Response.success(listBook,next)
 }

@@ -2,10 +2,10 @@
   "metadata": {
     "name": "Otakusan",
     "author": "Cá mụp cắn cáp",
-    "version": 3,
+    "version": 4,
     "source": "https://otakusan.net/",
     "regexp": "https://otakusan.net/manga-detail/(\\d+)/[0-9a-z].+$",
-    "description": "Fix lỗi get mục lục",
+    "description": "Fix load book in Genre",
     "local": "vi-VN",
     "language": "javascript",
     "type": "comic"
