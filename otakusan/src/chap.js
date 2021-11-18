@@ -9,8 +9,9 @@ function execute(url) {
             "referer": url
         })
         .string();
-    
+    //return Response.success(JSON.parse(json).view)
     var linkImage = JSON.parse(json).view.split(',')
+    
     var listLinkImage = []
     var link = ""
     if(linkImage[0].indexOf('ON')!=-1){
@@ -32,7 +33,7 @@ function execute(url) {
 
     }
     else{
-        Console.log("http")
+        //Console.log("http")
         var str_sync ="https://image.otakuscan.net/api/Value/ImageSyncing?url="
         for(var i in linkImage){
             if(linkImage[i].indexOf('http')!=-1)
