@@ -7,7 +7,7 @@ function execute(url) {
             cover: el.select(".col-lg-3 .manga-top-img img").attr("src"),
             host: "https://otakusan.net",
             author: el.select(".table-striped tr").get(4).select("td").text(),
-            description: el.select("p.summary").text(),
+            description: el.select(".summary").text().replace("Xem Thêm",""),
             detail: "Tên khác: " +  el.select(".table-striped tr").get(1).select("td").text() + "<br>"
             + "Author: " +  el.select(".table-striped tr").get(4).select("td").text()+ "<br>"
             + "Thể loại: " +  el.select(".table-striped tr").get(3).select("td").text()
