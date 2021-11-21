@@ -2,10 +2,10 @@
   "metadata": {
     "name": "Komeloli.net",
     "author": "Cá mụp cắn cáp",
-    "version": 1,
+    "version": 2,
     "source": "https://komeloli.net/",
     "regexp": "(www.)?komeloli.net/manga/[a-z].+/?$",
-    "description": "Đọc truyện tại Komeloli.net",
+    "description": "Fix cover genre",
     "local": "vi-VN",
     "language": "javascript",
     "type": "comic",
