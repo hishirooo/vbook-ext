@@ -2,28 +2,23 @@ function execute(url, page) {
     if(!page) page = 1;
     var filter = url.match(/otakusan.net\/[A-Za-z].+\/(.+)Newest/)[1];
 
-    var doc = Http.post(url).params({
+    var doc = fetch(url, {
+    method: "POST",
+    body: {
         "Lang": "vn",
         "Page": page,
         "Type": "Include",
         "Dir": "NewPostedDate",
         "FilterCategory%5B0%5D": filter
-    }).html()
+    }}).html()
 
-    var listBook = [];
-
-    var allBook = doc.select('.picture-card')
-    for(var i in allBook){
-        var book = allBook[i]
-        listBook.push({
-            name: book.select(".mdl-card__title img").attr("title"),
-            link: book.select(".mdl-card__title a").attr("href"),
-            cover: book.select(".mdl-card__title img").attr("src"),
-            description: "",
-            host: "https://otakusan.net"
-        });
-        
-    }
+    let listBook = doc.select('.picture-card').map(book=>({
+        name: book.select(".mdl-card__title a").attr("title"),
+        link: book.select(".mdl-card__title a").attr("href"),
+        cover: book.select(".mdl-card__title img").attr("src"),
+        description: book.select(".btn-primary").last().text(),
+        host: "https://otakusan.net"
+    }))
     if (listBook.length == 0) next = ""; 
     else next = (parseInt(page) + 1).toString();
 

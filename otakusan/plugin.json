@@ -2,10 +2,10 @@
   "metadata": {
     "name": "Otakusan",
     "author": "Cá mụp cắn cáp",
-    "version": 5,
+    "version": 6,
     "source": "https://otakusan.net/",
     "regexp": "https://otakusan.net/manga-detail/(\\d+)/[0-9a-z].+$",
-    "description": "Update info truyện",
+    "description": "Update cho app mới",
     "local": "vi-VN",
     "language": "javascript",
     "type": "comic"
