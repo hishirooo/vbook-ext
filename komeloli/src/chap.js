@@ -1,11 +1,15 @@
 load('aes.js');
 load('Base64.js');
 function execute(url) {
-    var doc = Http.get(url).string();
-    //var csrf_token = doc.match(/csrf_token = "(.*?)"/)[1]
+    var doc = fetch(url).text();
+    
     var csrf_token =  doc.match(/csrf_token.+"(.+)"/)[1]
     var chapterID = doc.match(/chapter_id = "(\d+)"/)[1]
-    var content = JSON.parse(Http.post("https://komeloli.net/api/get-content/" + chapterID ).string()).content
+    
+    // var content = JSON.parse(Http.post("https://komeloli.net/api/get-content/" + chapterID ).string()).content
+
+    var content = JSON.parse(fetch("https://komeloli.net/api/get-content/" + chapterID, {method: "POST"}).text()).content
+    //return Response.success(content)
     var linkImage = aes_de(content, md5(csrf_token + csrf_token));
     var listImage = []
     for(var i in linkImage){
