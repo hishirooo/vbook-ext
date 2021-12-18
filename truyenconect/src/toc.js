@@ -15,9 +15,30 @@ function execute(url) {
         var allVol = Html.parse(JSON.parse(Http.get('https://truyenconect.com/truyen/get-chap-selector?chap='+firstIDChap).string()).eps_selector);
         var el = allVol.select('option');
         var listChapter = [];
-        for (var e in el){
-            var vol = el[e]
-            //Console.log(vol.attr('value'))
+        // for (var e in el){
+        //     var vol = el[e]
+        //     //Console.log(vol.attr('value'))
+        //     var allChap = Html.parse(JSON.parse(Http.get('https://truyenconect.com/truyen/getreadingchapAction').params({
+        //         dataEpisodes : vol.attr('value'),
+        //         datastory : vol.attr('data-story'),
+        //         dataNavigation : vol.attr('data-navigation')
+        //     }).string()).html)
+        //     //Console.log(allChap)
+        //     allChap.select('option').first().remove();
+        //     //return Response.success(allChap)
+        //     var al = allChap.select('option');
+        //     //Console.log(al)
+        //     for(var i = al.size()-1; i >=0; i--){
+        //         var chap = al.get(i);
+        //         url = chap.attr("value").match(/(.+)\/(\d+)-(.+)/)
+        //         listChapter.push({
+        //             name: chap.text(),
+        //             url: url[1] + "/" + url[3] + "-" + url[2],
+        //             host: "https://truyenconect.com"
+        //         })
+        //     }
+        // }
+        el.forEach(vol=>{
             var allChap = Html.parse(JSON.parse(Http.get('https://truyenconect.com/truyen/getreadingchapAction').params({
                 dataEpisodes : vol.attr('value'),
                 datastory : vol.attr('data-story'),
@@ -37,19 +58,19 @@ function execute(url) {
                     host: "https://truyenconect.com"
                 })
             }
-        }
+        })
 
         // 
     }else{
         //Console.log("ko volume")
         //https://truyenconect.com/truyen/tu-chan-lieu-thien-quan.html
-        var idChapter = doc.select("#chaptermore li h3 a")[0].attr("href").match(/(\d+)$/)[1]
+        var idChapter = doc.select("#chaptermore li h3 a").get(0).attr("href").match(/(\d+)$/)[1]
         var jsonChapterS = Http.get("https://truyenconect.com/truyen/get-chap-selector?chap=" +  idChapter).string()
         var chapterS = Html.parse(JSON.parse(jsonChapterS).chap_selector).select("option")
         for( var i = chapterS.size()-1; i>=0; i--){
             listChapter.push({
-                name: chapterS[i].text(),
-                url: chapterS[i].attr("value"),
+                name: chapterS.get(i).text(),
+                url: chapterS.get(i).attr("value"),
                 host: "https://truyenconect.com"
             })
         }

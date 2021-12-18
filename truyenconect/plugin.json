@@ -2,10 +2,10 @@
   "metadata": {
     "name": "Truyện Conect .Com",
     "author": "Cá mụp cắn cáp",
-    "version": 3,
+    "version": 4,
     "source": "https://truyenconect.com/",
     "regexp": "(www.)?truyenconect.com/truyen/[^.].+.html",
-    "description": "Đọc truyện tại Truyen Conect",
+    "description": "Đọc truyện tại Truyen Conect\nFix code",
     "local": "vi-VN",
     "language": "javascript",
     "type": "novel"

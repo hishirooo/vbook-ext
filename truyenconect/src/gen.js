@@ -19,11 +19,11 @@ function execute(url, page) {
         return Response.success(listBook)
 	}
 	else{
-
         if(!page) page = "1"
         var doc = Http.get(url + page).html()
 		if(url.indexOf('the-loai')!=-1){
             var bookS = doc.select(".row-eq-height .badge-pos-1")
+
             bookS.forEach(book => listBook.push({
                 name: book.select(".item-summary .post-title h2 a").text(),
                 link: book.select(".item-summary .post-title h2 a").attr("href"),
@@ -34,13 +34,15 @@ function execute(url, page) {
 		}
 		else{
             var bookS = doc.select(".left-content .manga-chapters-listing tr")
+
             bookS.forEach(book => listBook.push({
-                name: book.select("td")[0].select("a img").attr("alt"),
-                link: book.select("td")[0].select("a").attr("href"),
-                cover: book.select("td")[0].select("a img").attr("data-src"),
-                description:  String(book.select("td")[1].select(".category")).replace(/<[^>]+>/g,'').trim().replace(/&nbsp;/g,'').replace(/\s{2,}\n/g,','),
+                name: book.select("td").get(0).select("a img").attr("alt"),
+                link: book.select("td").get(0).select("a").attr("href"),
+                cover: book.select("td").get(0).select("a img").attr("data-src"),
+                description:  String(book.select("td").get(1).select(".category")).replace(/<[^>]+>/g,'').trim().replace(/&nbsp;/g,'').replace(/\s{2,}\n/g,','),
                 host: "https://truyenconect.com"
             }))
+            return Response.success(listBook)
 		}
         if (listBook.length == 0) next = ""; 
         else next = (parseInt(page) + 1).toString();
