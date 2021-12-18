@@ -2,10 +2,10 @@
   "metadata": {
     "name": "Sxyxht.com",
     "author": "Cá mụp cắn cáp",
-    "version": 2,
+    "version": 3,
     "source": "https://m.sxyxht.com/",
     "regexp": "(www.)?(m.)?sxyxht.com/dushu/(\\d+)/?$",
-    "description": "Truyện tiếng trung",
+    "description": "Truyện tiếng trung. Fix code",
     "local": "vi-VN",
     "language": "javascript",
     "type": "chinese_novel"
