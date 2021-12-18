@@ -2,10 +2,10 @@
   "metadata": {
     "name": "Box Truyện Tranh",
     "author": "Cá mụp cắn cáp",
-    "version": 1,
-    "source": "https://boxtruyentranh.net/",
-    "regexp": "(www.)?boxtruyentranh.net/[^/].+/?$",
-    "description": "Đọc truyện tranh tại boxtruyentranh.net",
+    "version": 2,
+    "source": "https://truyentranhdammyhay.com/",
+    "regexp": "(www.)?truyentranhdammyhay.com/[^/].+/?$",
+    "description": "Box truyện tranh đổi tên miền thành truyentranhdammyhay.com",
     "local": "vi-VN",
     "language": "javascript",
     "type": "comic"

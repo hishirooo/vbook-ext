@@ -1,6 +1,6 @@
 function execute(url) {
     var doc = Http.get(url + "/").html()
-    var chapterName = url.match(/https:\/\/boxtruyentranh.net\/(.+)/)[1]
+    var chapterName = url.match(/https:\/\/truyentranhdammyhay.com\/(.+)/)[1]
     var nameBook = chapterName.match(/(.+)-chap.+/)[1]
     var content = String(doc.select("#content-chap-0")).match(/content = \[(.+),.+\]/)[1].replace(/\"/g,'').split(',')
     var intContent = content.length

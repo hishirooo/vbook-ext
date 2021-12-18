@@ -8,7 +8,7 @@ function execute(url, page) {
         link: book.select("a").attr("href"),
         cover: book.select("img").attr("src"),
         description: book.select(".adds .epxs").text(),
-        host: "https://boxtruyentranh.net"  
+        host: "https://truyentranhdammyhay.com/"  
     }))
     if (listBook.length == 0) next = ""; 
     else next = (parseInt(page) + 1).toString();

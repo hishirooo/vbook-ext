@@ -1,5 +1,5 @@
 function execute() {
-    var doc = Http.get("https://boxtruyentranh.net/").html()
+    var doc = Http.get("https://truyentranhdammyhay.com/").html()
     var genreS = doc.select(".genre li a")
     var listGenre = []
     genreS.forEach(genre => listGenre.push({

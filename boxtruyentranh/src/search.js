@@ -1,6 +1,6 @@
 function execute(key, page) {
     if(!page) page = "1"
-    var doc = Http.get("https://boxtruyentranh.net/page/" + page + "?s=" + key + "&q=" + key).html()
+    var doc = Http.get("https://truyentranhdammyhay.com/page/" + page + "?s=" + key + "&q=" + key).html()
     var books = doc.select(".listupd .bs")
     var listBook = []
     books.forEach(book => listBook.push({
@@ -8,7 +8,7 @@ function execute(key, page) {
         link: book.select("a").attr("href"),
         cover: book.select("img").attr("src"),
         description: book.select(".adds .epxs").text(),
-        host: "https://boxtruyentranh.net"  
+        host: "https://truyentranhdammyhay.com/"  
     }))
     if (listBook.length == 0) next = ""; 
     else next = (parseInt(page) + 1).toString();

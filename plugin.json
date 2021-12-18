@@ -216,7 +216,7 @@
         "name": "Box Truyện Tranh",
         "author": "Cá Mụp Cắn Cáp",
         "path": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/boxtruyentranh/plugin.zip",
-        "version": 1,
+        "version": 2,
         "source": "https://boxtruyentranh.net/",
         "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/boxtruyentranh/icon.png",
         "description": "Đọc truyện tranh tại https://boxtruyentranh.net/"
