@@ -3,9 +3,9 @@ function execute(url) {
     var chapters = doc.select(".listing-chapters_wrap ul li")
     var listChapter = []
     chapters.forEach(chapter => listChapter.push({
-        name: chapter.select("a")[1].text(),
+        name: chapter.select("a").text(),
         url: chapter.select(".thumblink").attr("href"),
         host: "https://kocr.net"
     }))
-    return Response.success(listChapter)
+    return Response.success(listChapter.reverse())
 }

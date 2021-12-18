@@ -2,10 +2,10 @@
   "metadata": {
     "name": "Kocr .Net",
     "author": "Cá mụp cắn cáp",
-    "version": 1,
+    "version": 2,
     "source": "https://kocr.net/",
     "regexp": "(www.)?kocr.net/bl/[^/].+/?",
-    "description": "Đam mỹ, đam mỹ everywhere",
+    "description": "Đam mỹ, đam mỹ everywhere\n Fix code app mới",
     "local": "vi-VN",
     "language": "javascript",
     "type": "comic"

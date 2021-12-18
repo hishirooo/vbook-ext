@@ -266,7 +266,7 @@
         "name": "Kocr.Net (Đam mỹ)",
         "author": "Cá Mụp Cắn Cáp",
         "path": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/kocr/plugin.zip",
-        "version": 1,
+        "version": 2,
         "source": "https://kocr.net/",
         "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/kocr/icon.png",
         "description": "Đọc truyện đam mỹ tại https://kocr.net/"
