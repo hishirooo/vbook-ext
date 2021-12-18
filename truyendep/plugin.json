@@ -2,10 +2,10 @@
   "metadata": {
     "name": "Truyện Đẹp .Net",
     "author": "cá mụp cắn cáp",
-    "version": 1,
+    "version": 2,
     "source": "https://truyendep.net/",
     "regexp": "(www.)?truyendep.net/[^/].+/?",
-    "description": "Đọc truyện tranh tại https://truyendep.net/",
+    "description": "Đọc truyện tranh tại https://truyendep.net/ . fix code",
     "local": "vi-VN",
     "language": "javascript",
     "type": "comic"

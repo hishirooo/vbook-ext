@@ -5,13 +5,13 @@ function execute(url) {
     var detail = String(info.select(".truyen_info_right li")).replace(/<[^>]+>/g,'').replace(name,'').trim().replace(/\n/g,'<br>')
     var ongoing = detail.indexOf('Hoàn thành')!=-1
     
-    var description = doc.select('.truyen_description .entry-content p')
+    var description = doc.select('.truyen_description .entry-content p').text().replace(/<[^>]+>/g,'')
     
     return Response.success({
             name : name,
             cover : doc.select(".truyen_info_left img").attr("src"),
             host : "https://truyendep.net",
-            author : info.select(".truyen_info_right li")[1].text().replace('Tác Giả:',''),
+            author : info.select(".truyen_info_right li").get(1).text().replace('Tác Giả:',''),
             description : description,
             ongoing : ongoing,
             detail : detail

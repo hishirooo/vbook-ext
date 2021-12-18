@@ -8,7 +8,7 @@ function execute(url, page) {
             name: book.select(".update_image a").attr("title"),
             link: book.select(".update_image a").attr("href"),
             cover: book.select(".update_image img").attr("src"),
-            description: book.select("> a")[0].attr("title").match(/(chap.+)/)[1] + ", " + book.select("h3 em").text(),
+            description: book.select("> a").get(0).attr("title").match(/(chap.+)/)[1] + ", " + book.select("h3 em").text(),
             host: "https://truyendep.net"
         }))
     }

@@ -5,8 +5,8 @@ function execute(url) {
     var listChapter = []
     for(var i=chapters.size()-1;i>=0;i--){
         listChapter.push({
-            name: chapters[i].select("span")[0].select("a").text(),
-            url: chapters[i].select("span")[0].select("a").attr("href"),
+            name: chapters[i].select("span").get(0).select("a").text(),
+            url: chapters[i].select("span").get(0).select("a").attr("href"),
             host: "https://truyendep.net"
         })       
     }

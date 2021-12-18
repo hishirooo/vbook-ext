@@ -206,7 +206,7 @@
         "name": "Truyện Đẹp .Net",
         "author": "Cá Mụp Cắn Cáp",
         "path": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/truyendep/plugin.zip",
-        "version": 1,
+        "version": 2,
         "source": "https://truyendep.net/",
         "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/truyendep/icon.png",
         "description": "Đọc truyện tranh tại https://truyendep.net/"
