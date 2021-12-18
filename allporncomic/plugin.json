@@ -2,10 +2,10 @@
   "metadata": {
     "name": "Allporncomic .Com",
     "author": "Cá mụp cắn cáp",
-    "version": 1,
+    "version": 2,
     "source": "https://allporncomic.com/",
     "regexp": "(www.)?allporncomic.com/[^/].+/[^/].+/?$",
-    "description": "Truyện hentai",
+    "description": "Truyện hentai\n fix code",
     "local": "vi-VN",
     "language": "javascript",
     "type": "comic",
