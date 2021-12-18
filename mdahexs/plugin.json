@@ -2,7 +2,7 @@
   "metadata": {
     "name": "M.dahexs .Net",
     "author": "Cá mụp cắn cáp",
-    "version": 1,
+    "version": 2,
     "source": "https://m.dahexs.net/",
     "regexp": "(www.)?m.dahexs.net/(\\d+).+/?$",
     "description": "Truyện tiếng trung",

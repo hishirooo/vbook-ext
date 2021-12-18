@@ -8,8 +8,8 @@ function execute(url) {
         author : info.select(".tab .p1 a").text(),
         description : info.select(".jj").text(),
         //ongoing : ongoing,
-        detail : info.select(".tab p")[0].text() + "<br>"
-        + info.select(".tab p")[1].text() + "<br>" 
-        + info.select(".tab p")[2].text()     
+        detail : info.select(".tab p").get(0).text() + "<br>"
+        + info.select(".tab p").get(1).text() + "<br>" 
+        + info.select(".tab p").get(2).text()     
     })
 }
