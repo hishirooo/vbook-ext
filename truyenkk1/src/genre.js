@@ -1,6 +1,6 @@
 function execute() {
 	var doc = Http.get("https://truyenkk1.com/").html()
-	var genres = doc.select(".navbar-nav > .dropdown")[1].select("ul li a")
+	var genres = doc.select(".navbar-nav > .dropdown").get(1).select("ul li a")
     var listGenre  = []
 
     genres.forEach(genre => listGenre.push({
