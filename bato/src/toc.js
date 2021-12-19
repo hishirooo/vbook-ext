@@ -1,5 +1,5 @@
 function execute(url) {
-    var doc = Http.get(url).html();
+    var doc = Http.get(url+"/").html();
 
     var list_chapter = [];
 
@@ -15,3 +15,4 @@ function execute(url) {
     }
     return Response.success(list_chapter);
 }
+//https://bato.to/chapter/1826118

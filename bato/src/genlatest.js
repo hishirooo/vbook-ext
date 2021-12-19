@@ -15,16 +15,23 @@ function execute(url, page) {
         var element = doc.select(".line-b")   
     }
 
-    for(var i in element){
-        var book = element[i]
-        listBook.push({
+    // for(var i in element){
+    //     var book = element[i]
+    //     listBook.push({
+    //         name: book.select(".item-title").text(),
+    //         link: book.select(".item-text a").attr("href").replace("https://bato.to",""),
+    //         cover: book.select("img").attr("src"),
+    //         description: book.select(".item-genre span").text().replace(/ /g,', '),
+    //         host: "https://bato.to"      
+    //     });
+    // }    
+    element.forEach(book => listBook.push({
             name: book.select(".item-title").text(),
             link: book.select(".item-text a").attr("href").replace("https://bato.to",""),
             cover: book.select("img").attr("src"),
             description: book.select(".item-genre span").text().replace(/ /g,', '),
             host: "https://bato.to"      
-        });
-    }    
+        }))
 
     if (listBook.length == 0) next = ""; 
     else next = (parseInt(page) + 1).toString();

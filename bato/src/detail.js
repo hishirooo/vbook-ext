@@ -1,5 +1,5 @@
 function execute(url) {
-    var doc = Http.get(url).html()
+    var doc = Http.get(url+"/").html()
 
     var el = doc.select(".detail-set")
     var rank = doc.select(".attr-item").get(0).select("span").text()
