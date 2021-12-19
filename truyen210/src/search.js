@@ -1,6 +1,6 @@
 function execute(key, page) {
 	var doc = Http.get("https://truyen210.net/tim-kiem?q=" +  key).html()
-    var books = doc.select(".category-content .manga-list ul")[0].select("li")
+    var books = doc.select(".category-content .manga-list ul").first().select("li")
 
     var listBook = [];
 
