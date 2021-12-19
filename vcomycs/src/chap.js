@@ -1,7 +1,8 @@
 load('crypto.js');
 
 function execute(url) {
-    var doc = Http.get(url).string()
+    //var doc = Http.get(url).string()
+    var doc = fetch(url).text()
 
     //--------------------
 
@@ -13,10 +14,13 @@ function execute(url) {
     var images = Html.parse(chapterHTML).select("img")
     Console.log(images.size())
     var listImage = []
-    for(var i in images){
-        var img =images[i].attr("data-ehwufp")
-        listImage.push(img)
-    }
+    // for(var i in images){
+    //     var img =images[i].attr("data-ehwufp")
+    //     listImage.push(img)
+    // }
+    images.forEach(image=>{
+        listImage.push(image.attr("data-ehwufp"))
+    })
     return Response.success(listImage)
 }
 //https://vcomycs.com/het-nhu-han-quang-gap-nang-gat-chap-214/

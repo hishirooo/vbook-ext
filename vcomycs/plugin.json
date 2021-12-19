@@ -2,7 +2,7 @@
   "metadata": {
     "name": "Vcomycs.com",
     "author": "Cá mụp cắn cáp",
-    "version": 1,
+    "version": 2,
     "source": "https://vcomycs.com/",
     "regexp": "(www.)?vcomycs.com/truyen-tranh/[^/].+/?$",
     "description": "Đọc truyện tại https://vcomycs.com/",

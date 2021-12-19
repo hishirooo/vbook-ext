@@ -9,7 +9,7 @@ function execute(url) {
             var e = el.get(i);
             list_chapter.push({
                 //name: e.select("span")[0].text().replace('[...] – ',''),
-                name: title + " - " + e.select("span")[0].text().match(/Chap.+/)[0],
+                name: title + " - " + e.select("span").first().text().match(/Chap.+/)[0],
                 url: e.attr("href"),
                 host: "https://vcomycs.com"
             });
