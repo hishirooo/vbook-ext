@@ -2,7 +2,7 @@
   "metadata": {
     "name": "Dichtruyen Org",
     "author": "Cá mụp cắn cáp",
-    "version": 2,
+    "version": 3,
     "source": "https://dichtruyen.org/",
     "regexp": "(www.)?dichtruyen.org/truyen/[^/]+/?$",
     "description": "Sửa lỗi get truyện",
