@@ -3,7 +3,7 @@ function execute(url, page) {
     if (!page) page = '1';
     const doc = Http.get(url + page ).html()
 
-    var books = doc.select(".category-content .manga-list ul")[0].select("li")
+    var books = doc.select(".category-content .manga-list ul").first().select("li")
 
     var listBook = [];
 
