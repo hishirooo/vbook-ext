@@ -2,11 +2,11 @@
   "metadata": {
     "name": "Novel Full",
     "author": "Cá mụp cắn cáp",
-    "version": 1,
+    "version": 2,
     "source": "https://novelfull.com/",
     "regexp": "(www.)?novelfull.com/[0-9a-z].+html$",
     "description": "Đọc truyện tại Novel Full",
-    "local": "vi-VN",
+    "local": "en-US",
     "language": "javascript",
     "type": "novel"
   },

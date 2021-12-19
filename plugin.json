@@ -26,7 +26,7 @@
         "name": "Novell Full",
         "author": "Cá Mụp Cắn Cáp",
         "path": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/novelfull/plugin.zip",
-        "version": 1,
+        "version": 2,
         "source": "https://www.novelfull.com",
         "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/novelfull/icon.png",
         "description": "Đọc truyện trên trang Novellfull.com"
@@ -191,16 +191,16 @@
         "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/hentaivv/icon.png",
         "description": "Đọc hentai tại https://hentaivv.com/"
       }
-      ,
-      {
-        "name": "51txt.cc",
-        "author": "Cá Mụp Cắn Cáp",
-        "path": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/51txt/plugin.zip",
-        "version": 2,
-        "source": "https://www.51txt.cc/",
-        "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/51txt/icon.png",
-        "description": "Đọc truyện tiếng trung tại https://www.51txt.cc/"
-      }
+    //   ,
+    //   {
+    //     "name": "51txt.cc",
+    //     "author": "Cá Mụp Cắn Cáp",
+    //     "path": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/51txt/plugin.zip",
+    //     "version": 2,
+    //     "source": "https://www.51txt.cc/",
+    //     "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/51txt/icon.png",
+    //     "description": "Đọc truyện tiếng trung tại https://www.51txt.cc/"
+    //   }
       ,
       {
         "name": "Truyện Đẹp .Net",
