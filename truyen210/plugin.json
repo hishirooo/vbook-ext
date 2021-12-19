@@ -2,7 +2,7 @@
   "metadata": {
     "name": "Truyện 210",
     "author": "Cá Mụp Cắn Cáp",
-    "version": 1,
+    "version": 2,
     "source": "https://truyen210.net/",
     "regexp": "(www.)?truyen210.net/[^.]+.html",
     "description": "Nhiều truyện adult quá...",
