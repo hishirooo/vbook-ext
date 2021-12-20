@@ -22,4 +22,4 @@ function execute(url, page) {
 
 //https://dichtruyen.org/truyen/18099-cong-chua-be-bong/
 
-// https://dichtruyen.org/the-loai/adult/page-2/
+// https://dichtruyen.org/truyen/6385-thu-ky-cua-alexandros-dai-de/
