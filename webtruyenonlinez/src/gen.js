@@ -16,27 +16,23 @@ function execute(url, page) {
                 link: book.select(".book-cat-name a").attr("href"),
                 cover: book.select("img").attr("src"),
                 description: "Chapter: "+ info[1] + ", " + "Status: " + status + ", " + "Views: " + info[5].replace(',',''),
-                host: "http://webtruyenonlinez.com"    
+                host: "http://webtruyenonlinez.com/"    
             })
         })
     }
     else{
 
         var doc = Http.get(url + page).html()
+        
         var books = doc.select(".books-item")
         books.forEach(function(book){
-            var genres = book.select(".index-genre a")//.replace(/\n/,',')
-            var genre =""
-            for(var i=0; i<genres.size(); i++){
-                genre = i==genres.size()-1 ? genre + genres[i].text() + "." : genre + genres[i].text() + ", "
-            }
-            
+           
             listBook.push({
                 name: book.select("img").attr("alt"),
                 link: book.select(".col-md-4 a").attr("href"),
                 cover: book.select("img").attr("src"),  
-                description: genre,
-                host: "http://webtruyenonlinez.com"    
+                description: book.select(".index-author").text(),
+                host: "http://webtruyenonlinez.com/"    
             })
         })
     }
