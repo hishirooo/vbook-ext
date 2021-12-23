@@ -2,7 +2,7 @@
   "metadata": {
     "name": "Mangaxy.com",
     "author": "Cá mụp cắn cáp",
-    "version": 2,
+    "version": 3,
     "source": "https://nhomdich.com/",
     "regexp": "(www.)?nhomdich.com/[^/]+/?$",
     "description": "Đọc truyện tại https://nhomdich.com",
