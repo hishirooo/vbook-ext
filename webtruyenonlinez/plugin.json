@@ -2,7 +2,7 @@
   "metadata": {
     "name": "Webtruyenonlinez.com",
     "author": "Cá mụp cắn cáp",
-    "version": 6,
+    "version": 7,
     "source": "http://webtruyenonlinez.com/",
     "regexp": "(www.)?webtruyenonlinez.com/truyen/[^/].+/?$",
     "description": "Fix lỗi thiếu chương lần nữa =)) ",

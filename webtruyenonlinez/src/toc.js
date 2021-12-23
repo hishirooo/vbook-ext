@@ -1,5 +1,5 @@
 function execute(url,page) {
-    var idBook = url.match(/(\d+)/)[1]
+    var idBook = url.match(/\.(\d+)/)[1]
     var requestUrl = url.replace('http://webtruyenonlinez.com','')
     var doc = Http.post("http://webtruyenonlinez.com/index.php?truyen/fff.20982/get-chapters")
     .params({
