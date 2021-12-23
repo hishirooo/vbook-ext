@@ -2,10 +2,10 @@
   "metadata": {
     "name": "Mangaxy.com",
     "author": "Cá mụp cắn cáp",
-    "version": 1,
-    "source": "https://mangaxy.com",
-    "regexp": "(www.)?mangaxy.com/[^/]+/?$",
-    "description": "Đọc truyện tại https://mangaxy.com",
+    "version": 2,
+    "source": "https://nhomdich.com/",
+    "regexp": "(www.)?nhomdich.com/[^/]+/?$",
+    "description": "Đọc truyện tại https://nhomdich.com",
     "local": "vi-VN",
     "language": "javascript",
     "type": "comic"
