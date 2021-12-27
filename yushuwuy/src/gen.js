@@ -9,18 +9,25 @@ function execute(url,page) {
     if(doc){
         var all_book = doc.select(".common-bookele");
         
-        for(var i in all_book){
-            Console.log(all_book.size())
-            var book = all_book[i];
+        //for(var i in all_book){
+            //Console.log(all_book.size())
+            //var book = all_book[i];
             //Console.log(book.select("h3 a").attr("href"))
-            gen.push({
+        //     gen.push({
+        //         name: book.select("h3 a").text(),
+        //         link: book.select("h3 a").attr("href"),
+        //         cover: "https://i.imgur.com/FbaKQ0k.jpg",
+        //         description: book.select(".lastupdate").text(),
+        //         host: 'https://yushuwuy.com'
+        //     });
+        // }
+        all_book.forEach(book=>gen.push({
                 name: book.select("h3 a").text(),
                 link: book.select("h3 a").attr("href"),
                 cover: "https://i.imgur.com/FbaKQ0k.jpg",
                 description: book.select(".lastupdate").text(),
                 host: 'https://yushuwuy.com'
-            });
-        }
+        }))
         return Response.success(gen,next);
     }
 }
