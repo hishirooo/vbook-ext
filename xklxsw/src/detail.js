@@ -1,6 +1,6 @@
 function execute(url) {
 
-    var doc = Http.get(url).html();
+    var doc = Http.get(url+"/").html();
     if (doc) {
         return Response.success({
             name: doc.select(".content .fd-list .bookimg img").attr("alt"),
