@@ -2,7 +2,7 @@
   "metadata": {
     "name": "Sxyxht.com",
     "author": "Cá mụp cắn cáp",
-    "version": 4,
+    "version": 5,
     "source": "https://m.sxyxht.com/",
     "regexp": "(www.)?(m.)?sxyxht.com/dushu/(\\d+)/?$",
     "description": "Truyện tiếng trung. add search",
