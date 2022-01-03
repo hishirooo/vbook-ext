@@ -7,6 +7,6 @@ function execute(url) {
         url: chapter.select("a").attr("href"),
         host: "https://allporncomic.com"  
     }))
-    return Response.success(listChapter)
+    return Response.success(listChapter.reverse())
 
 }
