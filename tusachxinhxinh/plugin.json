@@ -2,10 +2,10 @@
   "metadata": {
     "name": "Tusachxinhxinh.com",
     "author": "Cá mụp cắn cáp",
-    "version": 1,
+    "version": 2,
     "source": "https://tusachxinhxinh.com",
     "regexp": "(www.)?tusachxinhxinh.com/[^/].+/?$",
-    "description": "Đọc truyện tại tusachxinhxinh.com",
+    "description": "Fix code",
     "local": "vi-VN",
     "language": "javascript",
     "type": "comic"

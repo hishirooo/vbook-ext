@@ -1,8 +1,10 @@
 function execute() {
     var doc = Http.get("http://tusachxinhxinh.com/").html()
-    var genres = doc.select(".list-unstyled li a")
+    //return Response.success(doc)
+    var genres = doc.select("#nav-tags .tags a")
+    //return Response.success(genres)
     var listGenre = []
-    genres.forEach(function(genre){
+    genres.forEach(genre => {
         listGenre.push({
             title : genre.text(),
             input : genre.attr("href"),
@@ -11,3 +13,4 @@ function execute() {
     });
     return Response.success(listGenre)
 }
+// ok

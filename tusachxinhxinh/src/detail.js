@@ -1,28 +1,33 @@
 function execute(url) {
     var doc = Http.get(url + "/").html()
-    //----------------
-    var ratingCount = doc.select(".vote-details > span")[1].text()
+    //return Response.success(doc.select(".comic-intro-text"))
 
-    var otherName =  doc.select(".post-content_item")[2].text()
-    if(otherName.indexOf('Other name: ')==-1)
-        otherName = ""
-    var content = doc.select(".site-content > div > div")[1].select(".summary__content").text()
- 
-    var rank = doc.select(".post-content_item")[1].text()
-
-    var  author = doc.select(".author-content a").text()
-    if(author=="") author ="Updating"
-
-    var ongoing = doc.select(".post-status").text()
-    //----------------
+    var genres = String(doc.select(".comic-info .tags a"))
+    .replace(/\n/g,', ')
+    .replace(/(<([^>]+)>)/g,'')
+    var details = String(doc.select(".comic-intro-text"))
+    .replace(/(<([^>]+)>)/g,'')
+    .replace("Tác giả:","<br>Tác giả:")
+    .replace("Minh họa:","<br>Minh họa:")
+    .replace("Nhóm dịch:","<br>Nhóm dịch:")
+    .replace("Tình trạng:","<br>Tình trạng:")
+    .replace(/Ngày thêm.+Thể loại/g,'Thể loại')
+    .replace("Thể loại:","<br>Thể loại:")
+    .replace(/\s+<br>/g,'<br>')
+    + genres
     
+    var description = doc.select(".intro-container .text-justify p").text()
+    
+    var author = String(doc.select(".comic-intro-text")).replace(/(<([^>]+)>)/g,'').match(/Tác giả:(.+)Minh họa:/)[1].trim()
+    
+
     return Response.success({
-        name : doc.select(".post-title h1").text(),
-        cover : doc.select(".summary_image img").attr("src"),
+        name : doc.select(".info-title").text(),
+        cover : doc.select(".img-thumbnail").attr("src"),
         host : "https://tusachxinhxinh.com",
         author : author,
-        description : content,
-        ongoing : ongoing.indexOf('Đang tiến hành')!=-1,
-        detail :"Rate: " + ratingCount + "<br>" + rank + "<br>" + otherName + "<br>" + "Author: " + author
+        description : description,
+        ongoing : String(doc.select(".comic-intro-text")).indexOf('Đang tiến hành')!=-1,
+        detail : details
     })
 }
