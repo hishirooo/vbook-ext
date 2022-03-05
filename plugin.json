@@ -271,6 +271,17 @@
         "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/kocr/icon.png",
         "description": "Đọc truyện đam mỹ tại https://kocr.net/"
       }
+      ,
+      {
+        "name": "Manhwas Men",
+        "author": "Cá Mụp Cắn Cáp",
+        "path": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/ManhwasMen/plugin.zip",
+        "version": 1,
+        "source": "https://kocr.net/",
+        "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/ManhwasMen/icon.png",
+        "description": "Đọc truyện 18+ tại https://manhwas.men/"
+      }
+      
     ]
     
 }

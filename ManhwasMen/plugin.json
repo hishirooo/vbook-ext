@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "name": "ManhwasMen",
+    "author": "Cá Mụp Cắn Cáp",
+    "version": 1,
+    "source": "https://manhwas.men/",
+    "regexp": "(www.)?manhwas.men/manga/[^/].+/?$",
+    "description": "Truyện 18+",
+    "local": "vi-VN",
+    "language": "javascript",
+    "type": "comic",
+    "tag" : "nsfw"
+  },
+  "script": {
+    "home": "home.js",
+    "genre": "genre.js",
+    "detail": "detail.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
+}
