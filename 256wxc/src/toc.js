@@ -9,7 +9,7 @@ function execute(url) {
         list_chapter.push({
             name: chapter.text(),
             url: chapter.attr("href"),
-            host: "https://www.256wxc.com"
+            host: "https://www.256wenku.com"
 
         });
     }

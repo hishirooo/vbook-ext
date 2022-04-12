@@ -11,7 +11,7 @@ function execute(url) {
         + info.select("time.bookinfo").text() + "<br>"
         + info.select("span.bookinfo").get(1).text() + "<br>",
         //ongoing : ,
-        host: "https://www.256wxc.com/",
+        host: "https://www.256wenku.com/",
     });
 }
 // https://www.256wxc.com/read/74342/

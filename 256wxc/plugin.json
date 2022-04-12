@@ -2,8 +2,8 @@
   "metadata": {
     "name": "256wxc.com",
     "author": "Cá mụp cắn cáp",
-    "version": 2,
-    "source": "https://www.256wxc.com/",
+    "version": 3,
+    "source": "https://www.256wenku.com/",
     "regexp": "https://www.(256wxc|256wenku).com/read/(\\d+)/?",
     "description": "Mô tả",
     "local": "vi-VN",

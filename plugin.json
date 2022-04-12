@@ -82,10 +82,10 @@
         "name": "256wxc.com",
         "author": "Cá Mụp Cắn Cáp",
         "path": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/256wxc/plugin.zip",
-        "version": 2,
-        "source": "https://www.256wxc.com",
+        "version": 3,
+        "source": "https://www.256wenku.com",
         "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/256wxc/icon.png",
-        "description": "fix link"
+        "description": "change url page"
       }
       ,
       {
