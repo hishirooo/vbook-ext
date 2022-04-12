@@ -4,10 +4,11 @@ function execute(url) {
     var listchapter = []
     if(checkListChapter!=""){
         var phantrang = doc.select("#id_pagination")
-        
         if(phantrang!=""){
 
-            var totalPage = phantrang.select("li").size()-1
+            var totalPage = parseInt(phantrang.select("li").get(phantrang.select("li").size()-2).text())
+
+            console.log(totalPage)
             var chapters = doc.select(".listchap li .crop-text a")
             //- page 1
             chapters.forEach(chap => listchapter.push({
