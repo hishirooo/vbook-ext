@@ -1,5 +1,6 @@
 function execute(url) {
-
+    if(url.indexOf('m.xklxsw')!=-1)
+        url = url.replace('m.xklxsw','xklxsw')
     var doc = Http.get(url+"/").html();
     if (doc) {
         return Response.success({

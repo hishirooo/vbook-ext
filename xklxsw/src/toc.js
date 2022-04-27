@@ -1,5 +1,7 @@
 //load chương
 function execute(url) {//khi gửi đi nó clear mất /
+    if(url.indexOf('m.xklxsw')!=-1)
+        url = url.replace('m.xklxsw','xklxsw')
     var doc = Http.get(url+'/').html();
     var idtruyen = url.match(/http.*book\/(\d+)/)[1];
     Console.log(idtruyen);
