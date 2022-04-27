@@ -2,10 +2,10 @@
   "metadata": {
     "name": "256wxc.com",
     "author": "Cá mụp cắn cáp",
-    "version": 3,
+    "version": 4,
     "source": "https://www.256wenku.com/",
     "regexp": "https://www.(256wxc|256wenku).com/read/(\\d+)/?",
-    "description": "Mô tả",
+    "description": "256wxc -> 256wenku",
     "local": "vi-VN",
     "language": "javascript",
     "type": "chinese_novel"
