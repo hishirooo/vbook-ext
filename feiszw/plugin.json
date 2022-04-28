@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "name": "Feiszw.com",
+    "author": "Cá mụp cắn cáp",
+    "version": 1,
+    "source": "https://www.feiszw.com/",
+    "regexp": "(www.)?feiszw.com/Html/(\\d+)/index.html",
+    "description": "Mô tả",
+    "local": "ch-CN",
+    "language": "javascript",
+    "type": "chinese_novel"
+  },
+  "script": {
+    "home": "home.js",
+    "genre": "genre.js",
+    "detail": "detail.js",
+    "search": "search.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
+}

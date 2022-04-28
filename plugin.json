@@ -250,6 +250,7 @@
         "source": "https://m.sxyxht.com/",
         "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/sxyxht/icon.png",
         "description": "Đọc truyện tại https://m.sxyxht.com/"
+        
       }
       ,
       {
@@ -259,7 +260,9 @@
         "version": 3,
         "source": "https://allporncomic.com/",
         "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/allporncomic/icon.png",
-        "description": "Đọc truyện hentai tại https://allporncomic.com/"
+        "description": "Đọc truyện hentai tại https://allporncomic.com/",
+        "type": "comic",
+        "tag": "nsfw"
       }
       ,
       {
@@ -269,7 +272,9 @@
         "version": 2,
         "source": "https://kocr.net/",
         "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/kocr/icon.png",
-        "description": "Đọc truyện đam mỹ tại https://kocr.net/"
+        "description": "Đọc truyện đam mỹ tại https://kocr.net/",
+        "type": "comic",
+        "tag": "nsfw"
       }
       ,
       {
@@ -279,9 +284,21 @@
         "version": 1,
         "source": "https://manhwas.men/",
         "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/ManhwasMen/icon.png",
-        "description": "Đọc truyện 18+ tại https://manhwas.men/"
+        "description": "Đọc truyện 18+ tại https://manhwas.men/",
+        "type": "comic",
+        "tag": "nsfw"
       }
-      
+      ,
+      {
+        "name": "Feiszw.com",
+        "author": "Cá Mụp Cắn Cáp",
+        "path": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/feiszw/plugin.zip",
+        "version": 1,
+        "source": "https://www.feiszw.com",
+        "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/feiszw/icon.png",
+        "description": "Đọc truyện tiếng trung tại https://www.feiszw.com",
+        "type": "novel"
+      }
     ]
     
 }
