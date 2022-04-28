@@ -2,7 +2,7 @@
   "metadata": {
     "name": "Feiszw.com",
     "author": "Cá mụp cắn cáp",
-    "version": 1,
+    "version": 2,
     "source": "https://www.feiszw.com/",
     "regexp": "(www.)?(m.)?feiszw.com/Html/(\\d+)/index.html",
     "description": "Mô tả",
