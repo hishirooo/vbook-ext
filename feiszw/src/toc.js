@@ -1,4 +1,8 @@
 function execute(url) {
+    if(url.indexOf("m.feiszw.com")!=-1){
+        var bookid =  url.match(/(\d+)/)[1]
+        url = "https://www.feiszw.com/Html/" + bookid + "/index.html"
+    }
     var doc = fetch(url).html()
     var firstURL = url.replace("index.html","")
     Console.log(firstURL)
