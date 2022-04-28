@@ -1,7 +1,26 @@
 function execute(key, page) {
-    var doc = Http.get("https://www.feiszw.com/book/search.aspx?SearchKey=" + key + "&SearchClass=1&SeaButton=").html()
+    let response = fetch('https://m.feiszw.com/search.aspx', {
+        method: "GET",
+        queries: {
+            s : key,
+        }
+    });
 
-    return Response.success(doc)
+    if (response.ok) {
+        let doc = response.html();
+        const data = [];
+        
+		doc.select("#h div.nlist").forEach(e => {
+            data.push({
+                name: e.select("h3").first().text(),
+                link: e.select("a").first().attr("href"),
+                cover: "https://m.feiszw.com" + e.select("img").first().attr("src"),
+                description: e.select("span.author").text().trim(),
+                host: "https://www.feiszw.com"
+            })
+        });
+
+        return Response.success(data);
+    }
+    return null;
 }
-
-//https://www.feiszw.com/book/search.aspx?SearchKey=%C8%AB%C7%F2&SearchClass=1&SeaButton=
