@@ -7,7 +7,7 @@ function execute(url) {
     
     return Response.success({
         name: doc.select(".info p").get(0).select("a").text(),
-        cover: "https://www.feiszw.com" + doc.select(".bookimg a img").attr("src"),
+        cover: "https://images.weserv.nl/?url=https://www.feiszw.com"  + doc.select(".bookimg a img").attr("src") + "&output=jpg",
         author: doc.select(".info p").get(0).select("span").text(),
         description: doc.select(".intro").text(),
         detail: "",
