@@ -1,10 +1,10 @@
 function execute(url) {
     url = url.replace("m.feiszw","feiszw")
-    var doc = fetch(url).html()
+    var doc = Http.get(url).html()
     
     return Response.success({
         name: doc.select(".info p").get(0).select("a").text(),
-        cover: doc.select(".bookimg a img").attr("src"),
+        cover: "https://www.feiszw.com" + doc.select(".bookimg a img").attr("src"),
         author: doc.select(".info p").get(0).select("span").text(),
         description: doc.select(".intro").text(),
         detail: "",

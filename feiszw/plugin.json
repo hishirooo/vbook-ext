@@ -2,10 +2,10 @@
   "metadata": {
     "name": "Feiszw.com",
     "author": "Cá mụp cắn cáp",
-    "version": 2,
+    "version": 4,
     "source": "https://www.feiszw.com/",
-    "regexp": "(www.)?(m.)?feiszw.com/Html/(\\d+)/index.html",
-    "description": "Mô tả",
+    "regexp": "(www.)?feiszw.com/Html/(\\d+)/index.html|(www.)?(m.)?feiszw.com/book-(\\d+)/?",
+    "description": "Đọc truyện tiếng trung",
     "local": "ch-CN",
     "language": "javascript",
     "type": "chinese_novel"
