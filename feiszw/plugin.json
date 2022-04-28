@@ -4,7 +4,7 @@
     "author": "Cá mụp cắn cáp",
     "version": 1,
     "source": "https://www.feiszw.com/",
-    "regexp": "(www.)?feiszw.com/Html/(\\d+)/index.html",
+    "regexp": "(www.)?(m.)?feiszw.com/Html/(\\d+)/index.html",
     "description": "Mô tả",
     "local": "ch-CN",
     "language": "javascript",
