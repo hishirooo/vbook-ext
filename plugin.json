@@ -11,7 +11,9 @@
         "version": 5,
         "source": "https://www.xklxsw.com",
         "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/xklxsw/icon.png",
-        "description": "Đọc truyện trên trang Xklxsw.com"
+        "description": "Đọc truyện trên trang Xklxsw.com",
+        "type":  "chineses_novel",
+        "locale": "zh_CN"
       },
       {
         "name": "Jpmtl",
@@ -47,7 +49,9 @@
         "version": 2,
         "source": "https://www.yushuwuy.com",
         "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/yushuwuy/icon.png",
-        "description": "Đọc truyện trên trang Yushuwuy.com"
+        "description": "Đọc truyện trên trang Yushuwuy.com",
+        "type":  "chineses_novel",
+        "locale": "zh_CN"
       },
       {
         "name": "Otakusan",
@@ -85,7 +89,9 @@
         "version": 4,
         "source": "https://www.256wenku.com",
         "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/256wxc/icon.png",
-        "description": "change url page"
+        "description": "change url page",
+        "type":  "chineses_novel",
+        "locale": "zh_CN"
       }
       ,
       {
@@ -293,7 +299,7 @@
         "name": "Feiszw.com",
         "author": "Cá Mụp Cắn Cáp",
         "path": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/feiszw/plugin.zip",
-        "version": 6,
+        "version": 7,
         "source": "https://www.feiszw.com",
         "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/feiszw/icon.png",
         "description": "Đọc truyện tiếng trung tại https://www.feiszw.com",

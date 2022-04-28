@@ -14,9 +14,9 @@ function execute(key, page) {
             data.push({
                 name: e.select("h3").first().text(),
                 link: e.select("a").first().attr("href"),
-                cover: "https://m.feiszw.com" + e.select("img").first().attr("src"),
+                cover: "https://images.weserv.nl/?url=https://www.feiszw.com" + e.select("img").first().attr("src") + "&output=jpg",
                 description: e.select("span.author").text().trim(),
-                host: "https://www.feiszw.com"
+                host: "https://m.feiszw.com"
             })
         });
 
