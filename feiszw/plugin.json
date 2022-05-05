@@ -2,7 +2,7 @@
   "metadata": {
     "name": "Feiszw.com",
     "author": "Cá mụp cắn cáp",
-    "version": 7,
+    "version": 8,
     "source": "https://www.feiszw.com/",
     "regexp": "(www.)?feiszw.com/Html/(\\d+)/index.html|(www.)?(m.)?feiszw.com/book-(\\d+)/?",
     "description": "Đọc truyện tiếng trung",
@@ -12,7 +12,6 @@
   },
   "script": {
     "home": "home.js",
-    "genre": "genre.js",
     "detail": "detail.js",
     "search": "search.js",
     "toc": "toc.js",
