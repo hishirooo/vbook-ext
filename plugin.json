@@ -306,6 +306,18 @@
         "type":  "chineses_novel",
         "locale": "zh_CN"
       }
+            ,
+      {
+        "name": "Dragonball Wiki",
+        "author": "Cá Mụp Cắn Cáp",
+        "path": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/dragonballwiki/plugin.zip",
+        "version": 1,
+        "source": "https://dragonballwiki.net/doctruyen/",
+        "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/dragonballwiki/icon.png",
+        "description": "Đọc truyện tại dragonballwiki.net",
+        "type":  "comic",
+        "locale": "vi-VN"
+      }
     ]
     
 }

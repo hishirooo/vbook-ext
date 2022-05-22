@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "name": "Dragonball Wiki",
+    "author": "Cá mụp cắn cáp",
+    "version": 1,
+    "source": "https://dragonballwiki.net/doctruyen/",
+    "regexp": "(www.)?dragonballwiki.net/doctruyen/[A-Za-z-].+/?",
+    "description": "Mô tả",
+    "local": "vi-VN",
+    "language": "javascript",
+    "type": "comic"
+  },
+  "script": {
+    "home": "home.js",
+    "genre": "genre.js",
+    "detail": "detail.js",
+    "search": "search.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  }
+}
