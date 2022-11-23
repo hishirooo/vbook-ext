@@ -7,7 +7,7 @@ function execute(url) {
     return Response.success({
         name : doc.select(".info-title").text(),
         cover : doc.select(".img-thumbnail").attr("src"),
-        host : "https://vcomycs.com",
+        host : "https://vcomycs.net",
         author : doc.select(".comic-intro-text span").get(1).text(),
         description : doc.select(".text-justify p").text(),
         ongoing : ongoing.indexOf('Đang tiến hành')!=-1,
@@ -21,4 +21,4 @@ function execute(url) {
 
 }
 
-//https://vcomycs.com/truyen-tranh/lai-mot-lan-nua-huong-ve-anh-sang/
+//https://vcomycs.net/truyen-tranh/lai-mot-lan-nua-huong-ve-anh-sang/

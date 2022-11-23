@@ -1,7 +1,7 @@
 function execute(url) {
     var doc = Http.get(url+ "/").html()
     var check_content = String(doc.select(".reading")).indexOf("<br>")!=-1
-    Console.log(check_content)
+    console.log(check_content)
     var images = doc.select(".img-center")
     if(check_content==false){
         var listImage = [] 

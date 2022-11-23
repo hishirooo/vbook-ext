@@ -12,7 +12,7 @@ function execute(url) {
     return Response.success({
         name : doc.select("h1.crop-text-1").text(),
         cover : doc.select(".row .book3d img").attr("data-src"),
-        host : "https://truyenkk1.com",
+        host : "https://truyenkkz.com",
         author : "",
         description : doc.select("#gioi_thieu").text(),
         detail : "Genre: " + genre,

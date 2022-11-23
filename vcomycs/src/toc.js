@@ -11,7 +11,7 @@ function execute(url) {
                 //name: e.select("span")[0].text().replace('[...] – ',''),
                 name: title + " - " + e.select("span").first().text().match(/Chap.+/)[0],
                 url: e.attr("href"),
-                host: "https://vcomycs.com"
+                host: "https://vcomycs.net"
             });
         }
     }
