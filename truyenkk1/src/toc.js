@@ -14,7 +14,7 @@ function execute(url) {
             chapters.forEach(chap => listchapter.push({
                 name: chap.text(),
                 url: chap.attr("href"),
-                host: "https://truyenkk1.com"
+                host: "https://truyenkkz.com"
             }))    
             for( var i=2; i<=totalPage; i++){
                 var docPage = Http.get(url + "/" + i +"/#dsc").html()
@@ -22,7 +22,7 @@ function execute(url) {
                 chapters2.forEach(chap2 => listchapter.push({
                 name: chap2.text(),
                 url: chap2.attr("href"),
-                host: "https://truyenkk1.com"
+                host: "https://truyenkkz.com"
             }))   
             }
             //return Response.success(totalPage)
@@ -33,14 +33,14 @@ function execute(url) {
             chapters.forEach(chap => listchapter.push({
                 name: chap.text(),
                 url: chap.attr("href"),
-                host: "https://truyenkk1.com"
+                host: "https://truyenkkz.com"
             }))
         }
     }
     else{
 
         var idBook = doc.toString().match(/data-id="(.+)" data-slug/)[1]
-        var docHtml = Http.post("https://truyenkk1.com/wp-admin/admin-ajax.php").params({
+        var docHtml = Http.post("https://truyenkkz.com/wp-admin/admin-ajax.php").params({
             "action": "all_chap",
             "id": idBook
         }).html()
@@ -48,7 +48,7 @@ function execute(url) {
         chapters.forEach(chap => listchapter.push({
             name: chap.text(),
             url: chap.attr("href"),
-            host: "https://truyenkk1.com"
+            host: "https://truyenkkz.com"
         }))
     }
 

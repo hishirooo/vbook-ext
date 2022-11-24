@@ -1,7 +1,7 @@
 function execute(url, page) {
 	if(!page) page = "1"
     var listBook = []
-    var newUrl = "https://truyenkk1.com/wp-admin/admin-ajax.php"
+    var newUrl = "https://truyenkkz.com/wp-admin/admin-ajax.php"
     if(url.indexOf("https")==-1){
         var the_loai = url.split(" ")[0]
         var option_keyword_tax = url.split(" ")[1]
@@ -31,7 +31,7 @@ function execute(url, page) {
         link: book.select("a").attr("href"),
         cover: book.select("img").attr("src"),
         description: book.select("p.crop-text-2").text(),
-        host: "https://truyenkk1.com"
+        host: "https://truyenkkz.com"
     }))
 
     if (listBook.length == 0) next = ""; 
