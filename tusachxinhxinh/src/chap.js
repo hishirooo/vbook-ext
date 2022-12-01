@@ -1,6 +1,7 @@
 load('crypto.js')
 load('aes.js')
 function execute(url) {
+        url = url.replace("tusachxinhxinh.com","tusachxinh.com")
     var doc = fetch(url+"/").text()
     var htmlContent = doc.match(/var htmlContent="(.+)";<\/script> <\/div><\/div><section class=container>/)[1].replace(/\\\\\\/g,'').replace(/\\\\/g,'').replace(/\\\"/g,'"')
     

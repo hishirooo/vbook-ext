@@ -1,4 +1,5 @@
 function execute(url) {
+            url = url.replace("vcomycs.net","vcomycs.co")
     var doc = Http.get(url).html()
 
     var ongoing = doc.select(".comic-intro-text .comic-stt").text()
@@ -7,7 +8,7 @@ function execute(url) {
     return Response.success({
         name : doc.select(".info-title").text(),
         cover : doc.select(".img-thumbnail").attr("src"),
-        host : "https://vcomycs.net",
+        host : "https://vcomycs.co",
         author : doc.select(".comic-intro-text span").get(1).text(),
         description : doc.select(".text-justify p").text(),
         ongoing : ongoing.indexOf('Đang tiến hành')!=-1,
@@ -21,4 +22,4 @@ function execute(url) {
 
 }
 
-//https://vcomycs.net/truyen-tranh/lai-mot-lan-nua-huong-ve-anh-sang/
+//https://vcomycs.co/truyen-tranh/lai-mot-lan-nua-huong-ve-anh-sang/

@@ -1,6 +1,7 @@
 load('crypto.js');
 
 function execute(url) {
+        url = url.replace("vcomycs.net","vcomycs.co")
     //var doc = Http.get(url).string()
     var doc = fetch(url).text()
 
@@ -23,7 +24,7 @@ function execute(url) {
     })
     return Response.success(listImage)
 }
-//https://vcomycs.net/het-nhu-han-quang-gap-nang-gat-chap-214/
+//https://vcomycs.co/het-nhu-han-quang-gap-nang-gat-chap-214/
 
 function CryptoJSAesDecrypt(passphrase, encrypted_json_string) {
         var obj_json = JSON.parse(encrypted_json_string);

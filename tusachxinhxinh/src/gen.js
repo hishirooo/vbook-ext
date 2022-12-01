@@ -12,7 +12,7 @@ function execute(url, page) {
             link: book.select("a").attr("href"),
             cover: book.select("img").attr("src"),
             description: "View: "+ book.select(".badge").attr("data-cat"),
-            host: "https://tusachxinhxinh.com"    
+            host: "https://tusachxinh.com"    
         })
     })
   return Response.success(listBook)

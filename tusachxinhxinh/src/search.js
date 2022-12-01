@@ -1,5 +1,5 @@
 function execute(key) {
-    var doc = fetch('https://tusachxinhxinh.com/wp-admin/admin-ajax.php', {
+    var doc = fetch('https://tusachxinh.com/wp-admin/admin-ajax.php', {
     method: "POST", // GET, POST, PUT, DELETE, PATCH
     // headers: {
     //     "aaa": "xxx",
@@ -15,7 +15,7 @@ function execute(key) {
         link: book.link,
         cover: book.img,
         description: "View: " + book.vote,
-        host: "https://tusachxinhxinh.com"
+        host: "https://tusachxinh.com"
     }))
     //Console.log(doc.data)
     return Response.success(books)

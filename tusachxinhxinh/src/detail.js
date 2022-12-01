@@ -1,4 +1,5 @@
 function execute(url) {
+        url = url.replace("tusachxinhxinh.com","tusachxinh.com")
     var doc = Http.get(url + "/").html()
     //return Response.success(doc.select(".comic-intro-text"))
 
@@ -24,7 +25,7 @@ function execute(url) {
     return Response.success({
         name : doc.select(".info-title").text(),
         cover : doc.select(".img-thumbnail").attr("src"),
-        host : "https://tusachxinhxinh.com",
+        host : "https://tusachxinh.com",
         author : author,
         description : description,
         ongoing : String(doc.select(".comic-intro-text")).indexOf('Đang tiến hành')!=-1,
