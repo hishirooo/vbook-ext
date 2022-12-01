@@ -1,4 +1,5 @@
 function execute(url) {
+            url = url.replace("vcomycs.net","vcomycs.co")
     var doc = Http.get(url).html();
 
     if (doc){
@@ -11,7 +12,7 @@ function execute(url) {
                 //name: e.select("span")[0].text().replace('[...] – ',''),
                 name: title + " - " + e.select("span").first().text().match(/Chap.+/)[0],
                 url: e.attr("href"),
-                host: "https://vcomycs.net"
+                host: "https://vcomycs.co"
             });
         }
     }

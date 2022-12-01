@@ -3,13 +3,13 @@ function execute(url, page) {
     if(!page) page="1"
     
     if(url=='latest'){
-        var doc = Http.get('https://tusachxinhxinh.com/page/'+page+'/').html()
+        var doc = Http.get('https://tusachxinh.com/page/'+page+'/').html()
         var books = doc.select('.col-md-9 .comic-item-box').map(book=>({
             name: book.select("a").attr("title"),
             link: book.select("a").attr("href"),
             cover: book.select("img").attr("src"),
             description: "View: " + book.select(".follow-count").attr("title"),
-            host: "https://tusachxinhxinh.com"  
+            host: "https://tusachxinh.com"  
         }))
         if (books.length == 0) next = ""; 
         else next = (parseInt(page) + 1).toString();
@@ -17,19 +17,19 @@ function execute(url, page) {
         
     }else{
         if(url=='a-z')
-            var doc = Http.get('https://tusachxinhxinh.com/danh-sach-truyen/page/'+page+'/').html()
+            var doc = Http.get('https://tusachxinh.com/danh-sach-truyen/page/'+page+'/').html()
         if(url=='hot')
-            var doc = Http.get('https://tusachxinhxinh.com/truyen-hot-nhat/').html()
+            var doc = Http.get('https://tusachxinh.com/truyen-hot-nhat/').html()
         if(url=='mostview')
-            var doc = Http.get('https://tusachxinhxinh.com/nhieu-xem-nhat/').html()
+            var doc = Http.get('https://tusachxinh.com/nhieu-xem-nhat/').html()
         else
-            var doc = Http.get('https://tusachxinhxinh.com/tron-bo/').html()
+            var doc = Http.get('https://tusachxinh.com/tron-bo/').html()
         var books = doc.select('.comic-list-page .most-views .position-relative ').map(book=>({
             name: book.select("img").attr("alt"),
             link: book.select(".super-title a").attr("href"),
             cover: book.select("img").attr("src"),
             description: "View: " + String(book.select(".cat-score")).match(/fas fa-eye\"><\/span> (.+) <span class=\"fas fa-bookmark/)[1],//.attr("title"),
-            host: "https://tusachxinhxinh.com"  
+            host: "https://tusachxinh.com"  
         }))
         
     }
@@ -40,7 +40,7 @@ function execute(url, page) {
     //         link: book.select("a").attr("href"),
     //         cover: book.select("img").attr("src"),
     //         description: "",
-    //         host: "https://tusachxinhxinh.com"    
+    //         host: "https://tusachxinh.com"    
     //     })
     // })
     // if (listBook.length == 0) next = ""; 

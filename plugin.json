@@ -125,19 +125,19 @@
         "name": "Vcomycs.com",
         "author": "Cá Mụp Cắn Cáp",
         "path": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/vcomycs/plugin.zip",
-        "version": 2,
-        "source": "https://vcomycs.com/",
+        "version": 4,
+        "source": "https://Vcomycs",
         "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/vcomycs/icon.png",
-        "description": "Đọc truyện trên trang https://vcomycs.com/"
+        "description": "Đọc truyện trên trang https://Vcomycs"
       },
       {
         "name": "Tủ sách xinh xinh",
         "author": "Cá Mụp Cắn Cáp",
         "path": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/tusachxinhxinh/plugin.zip",
-        "version": 2,
-        "source": "https://tusachxinhxinh.com/",
+        "version": 3,
+        "source": "https://tusachxinh.com/",
         "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/tusachxinhxinh/icon.png",
-        "description": "Đọc truyện trên trang https://tusachxinhxinh.com/"
+        "description": "Đọc truyện trên trang https://tusachxinh.com/"
       },
       {
         "name": "Webtruyen Online Z",
@@ -182,8 +182,8 @@
         "name": "TruyenKK",
         "author": "Cá Mụp Cắn Cáp",
         "path": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/truyenkk1/plugin.zip",
-        "version": 8,
-        "source": "https://truyenkk1.com/",
+        "version": 10,
+        "source": "https://truyenkkz.com/",
         "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/truyenkk1/icon.png",
         "description": "Truyện tranh, truyện chữ tùm lum..."
       }

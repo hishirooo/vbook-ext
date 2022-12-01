@@ -1,5 +1,5 @@
 function execute(key) {
-    var doc = Http.post("https://vcomycs.net/wp-admin/admin-ajax.php")
+    var doc = Http.post("https://vcomycs.co/wp-admin/admin-ajax.php")
     .headers({
         "content-type" : "application/x-www-form-urlencoded; charset=UTF-8"
     }).
@@ -16,7 +16,7 @@ function execute(key) {
         link: book.link,
         cover: book.img,
         description: "Star: " + book.star + ", Vote: " + book.vote,
-        host: "https://vcomycs.net"      
+        host: "https://vcomycs.co"      
         });
     }
     return Response.success(listBook)

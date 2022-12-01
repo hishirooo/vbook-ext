@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "name": "Tusachxinhxinh.com",
+    "name": "Tusachxinh.com",
     "author": "Cá mụp cắn cáp",
-    "version": 2,
-    "source": "https://tusachxinhxinh.com",
-    "regexp": "(www.)?tusachxinhxinh.com/[^/].+/?$",
+    "version": 3,
+    "source": "https://tusachxinh.com",
+    "regexp": "(www.)?tusachxinh.com/[^/].+/?$",
     "description": "Fix code",
     "local": "vi-VN",
     "language": "javascript",
