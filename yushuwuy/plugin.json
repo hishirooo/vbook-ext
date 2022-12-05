@@ -2,7 +2,7 @@
   "metadata": {
     "name": "Yushuwuy",
     "author": "Cá mụp cắn cáp",
-    "version": 2,
+    "version": 3,
     "source": "https://yushuwuy.com",
     "regexp": "https://yushuwuy.com/read/\\d+.html",
     "description": "Đọc truyện tại yushuwuy.com",

@@ -46,7 +46,7 @@
         "name": "Yushuwuy",
         "author": "Cá Mụp Cắn Cáp",
         "path": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/yushuwuy/plugin.zip",
-        "version": 2,
+        "version": 3,
         "source": "https://www.yushuwuy.com",
         "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/yushuwuy/icon.png",
         "description": "Đọc truyện trên trang Yushuwuy.com",
@@ -207,16 +207,16 @@
     //     "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/51txt/icon.png",
     //     "description": "Đọc truyện tiếng trung tại https://www.51txt.cc/"
     //   }
-      ,
-      {
-        "name": "Truyện Đẹp .Net",
-        "author": "Cá Mụp Cắn Cáp",
-        "path": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/truyendep/plugin.zip",
-        "version": 2,
-        "source": "https://truyendep.net/",
-        "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/truyendep/icon.png",
-        "description": "Đọc truyện tranh tại https://truyendep.net/"
-      }
+    //   ,
+    //   {
+    //     "name": "Truyện Đẹp .Net",
+    //     "author": "Cá Mụp Cắn Cáp",
+    //     "path": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/truyendep/plugin.zip",
+    //     "version": 2,
+    //     "source": "https://truyendep.net/",
+    //     "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/truyendep/icon.png",
+    //     "description": "Đọc truyện tranh tại https://truyendep.net/"
+    //   }
       ,
       {
         "name": "Box Truyện Tranh",
@@ -287,7 +287,7 @@
         "name": "Manhwas Men",
         "author": "Cá Mụp Cắn Cáp",
         "path": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/ManhwasMen/plugin.zip",
-        "version": 1,
+        "version": 2,
         "source": "https://manhwas.men/",
         "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/ManhwasMen/icon.png",
         "description": "Đọc truyện 18+ tại https://manhwas.men/",
