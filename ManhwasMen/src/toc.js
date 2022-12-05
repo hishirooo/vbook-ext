@@ -8,11 +8,11 @@ function execute(url) {
     else
         newURL = url + "/"
     var doc = Http.get(newURL).html()
-    var chapters = doc.select(".chapters li .chapter-title-rtl")
+    var chapters = doc.select(".wp-manga-chapter a")
     var listChapter = []
     chapters.forEach(chap => listChapter.push({
-        name: chap.select("a").text(),
-        url: chap.select("a").attr("href"),
+        name: chap.select("p").text(),
+        url: chap.attr("href"),
         host: "https://manhwas.men"   
     }))
     return Response.success(listChapter.reverse())

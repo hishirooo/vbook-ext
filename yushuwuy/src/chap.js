@@ -1,18 +1,21 @@
 function execute(url) {
-
-    var doc1 = Http.get(url).html();
-    var url2 = url.replace(".html","_2.html")
-    //Console.log(url2)
-    var text = doc1.select("div#nr div#nr1 p");
-    var checkNext = doc1.select("td.next a").attr("href").match(/(\d+).html/)[1]
-    //Console.log(checkNext)
-    if(parseInt(checkNext)>0){
-        var doc_page2 = Http.get(url2).html();
-        var text2 = doc_page2.select("div#nr div#nr1 p");
-        text = text + text2
+    let cvData ="";
+    let part1 = url.replace("https://yushuwuy.com", "").replace(".html","");
+    var next = part1;
+    while (next.includes(part1)) {
+        let response = fetch("https://yushuwuy.com" + next +".html");
+        if (response.ok) {
+            let doc = response.html();
+            next = doc.select(".next").last().attr("href").replace(".html","");
+            let htm = doc.select("#nr1").html();
+            htm = htm.replace(/\&nbsp;/g, "");
+            cvData = cvData + htm;
+        } else {
+            break;
+        }
     }
-
-    text = text.replace(/<\//g,"<")
-    text = text.replace(/<p>\n<p>|<p>/g,'<br>')
-    return Response.success(text); 
+    if (cvData) {
+        return Response.success(cvData);
+    }
+    return null;
 }
