@@ -1,6 +1,6 @@
 function execute(url) {
     var doc = Http.get(url).html()
-    var info = doc.select(".art_head")//
+    var info = doc.select("#text")//
     // bình tĩnh. 
     return Response.success({
         name: info.select(".art_tit").text(),
@@ -15,3 +15,15 @@ function execute(url) {
     });
 }
 // https://www.256wxc.com/read/74342/
+
+function execute(url) {
+    const doc = Http.get(url).html()
+    return Response.success({
+        name: doc.select(".art_tit").text(),
+        cover: "https://i.imgur.com/FbaKQ0k.jpg",
+        description: doc.select('#nr_history').text(),
+        detail: doc.select("#text time").html(),
+        category: null,
+        host: "https://www.256wenku.com/"
+    });
+}
