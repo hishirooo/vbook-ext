@@ -173,32 +173,11 @@
         "name": "HentaiVV",
         "author": "Cá Mụp Cắn Cáp",
         "path": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/hentaivv/plugin.zip",
-        "version": 4,
-        "source": "https://hentaivv.com/",
+        "version": 5,
+        "source": "https://hentaivv1.com/",
         "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/hentaivv/icon.png",
-        "description": "Đọc hentai tại https://hentaivv.com/"
-      }
-    //   ,
-    //   {
-    //     "name": "51txt.cc",
-    //     "author": "Cá Mụp Cắn Cáp",
-    //     "path": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/51txt/plugin.zip",
-    //     "version": 2,
-    //     "source": "https://www.51txt.cc/",
-    //     "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/51txt/icon.png",
-    //     "description": "Đọc truyện tiếng trung tại https://www.51txt.cc/"
-    //   }
-    //   ,
-    //   {
-    //     "name": "Truyện Đẹp .Net",
-    //     "author": "Cá Mụp Cắn Cáp",
-    //     "path": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/truyendep/plugin.zip",
-    //     "version": 2,
-    //     "source": "https://truyendep.net/",
-    //     "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/truyendep/icon.png",
-    //     "description": "Đọc truyện tranh tại https://truyendep.net/"
-    //   }
-      ,
+        "description": "Đọc hentai tại https://hentaivv1.com/"
+      },
       {
         "name": "Box Truyện Tranh",
         "author": "Cá Mụp Cắn Cáp",
