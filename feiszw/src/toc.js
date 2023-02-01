@@ -1,7 +1,8 @@
 function execute(url) {
-    if(url.indexOf("m.feiszw.com")!=-1){
+    url = url.replace("feiszw.com","feiazw.com")
+    if(url.indexOf("m.feiazw.com")!=-1){
         var bookid =  url.match(/(\d+)/)[1]
-        url = "https://www.feiszw.com/Html/" + bookid + "/index.html"
+        url = "https://www.feiazw.com/Html/" + bookid + "/index.html"
     }
     var doc = fetch(url).html()
     var firstURL = url.replace("index.html","")
@@ -11,8 +12,8 @@ function execute(url) {
     chapters.forEach(chapter => listchapter.push({
         name: chapter.text(),
         url: firstURL + chapter.attr("href"),
-        host: "https://www.feiszw.com/"
+        host: "https://www.feiazw.com/"
     }))
     return Response.success(listchapter)
 }
-//https://www.feiszw.com/Html/23671/20526869.html
+//https://www.feiazw.com/Html/23671/20526869.html

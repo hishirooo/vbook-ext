@@ -1,5 +1,5 @@
 function execute(key, page) {
-    let response = fetch('https://m.feiszw.com/search.aspx', {
+    let response = fetch('https://m.feiazw.com/search.aspx', {
         method: "GET",
         queries: {
             s : key,
@@ -14,9 +14,9 @@ function execute(key, page) {
             data.push({
                 name: e.select("h3").first().text(),
                 link: e.select("a").first().attr("href"),
-                cover: "https://images.weserv.nl/?url=https://www.feiszw.com" + e.select("img").first().attr("src") + "&output=jpg",
+                cover: "https://images.weserv.nl/?url=https://www.feiazw.com" + e.select("img").first().attr("src") + "&output=jpg",
                 description: e.select("span.author").text().trim(),
-                host: "https://m.feiszw.com"
+                host: "https://m.feiazw.com"
             })
         });
 
