@@ -7,7 +7,7 @@ function execute(url) {
     }
     else{
         var idBook = doc.toString().match(/data-id="(.+)" data-slug/)[1]
-        var docHtml = Http.post("https://hentaivv.com/wp-admin/admin-ajax.php").params({
+        var docHtml = Http.post("https://hentaivv1.com/wp-admin/admin-ajax.php").params({
             "action": "all_chap",
             "id": idBook
         }).html()
@@ -16,7 +16,7 @@ function execute(url) {
     chapters.forEach(chap => listchapter.push({
         name: chap.text(),
         url: chap.attr("href"),
-        host: "https://hentaivv.com"
+        host: "https://hentaivv1.com"
     }))
     return Response.success(listchapter)
 

@@ -9,7 +9,7 @@ function execute(url) {
     return Response.success({
         name : doc.select("h1.crop-text-1").text(),
         cover : doc.select(".row .book3d img").attr("data-src"),
-        host : "https://hentaivv.com",
+        host : "https://hentaivv1.com",
         author : "",
         description : doc.select("#gioi_thieu").text(),
         detail : "Genre: " + genre,
