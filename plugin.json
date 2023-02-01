@@ -134,10 +134,10 @@
         "name": "Tủ sách xinh xinh",
         "author": "Cá Mụp Cắn Cáp",
         "path": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/tusachxinhxinh/plugin.zip",
-        "version": 3,
-        "source": "https://tusachxinh.com/",
+        "version": 4,
+        "source": "https://tusachxinh.info/",
         "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/tusachxinhxinh/icon.png",
-        "description": "Đọc truyện trên trang https://tusachxinh.com/"
+        "description": "Đọc truyện trên trang https://tusachxinh.info/"
       },
       {
         "name": "Webtruyen Online Z",
@@ -299,14 +299,14 @@
         "name": "Feiszw.com",
         "author": "Cá Mụp Cắn Cáp",
         "path": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/feiszw/plugin.zip",
-        "version": 8,
-        "source": "https://www.feiszw.com",
+        "version": 9,
+        "source": "https://www.feiazw.com",
         "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/feiszw/icon.png",
-        "description": "Đọc truyện tiếng trung tại https://www.feiszw.com",
+        "description": "Đọc truyện tiếng trung tại https://www.feiazw.com",
         "type":  "chineses_novel",
         "locale": "zh_CN"
       }
-            ,
+      ,
       {
         "name": "Dragonball Wiki",
         "author": "Cá Mụp Cắn Cáp",

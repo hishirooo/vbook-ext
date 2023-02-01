@@ -1,5 +1,5 @@
 function execute() {
-    var doc = Http.get("http://tusachxinh.com/").html()
+    var doc = Http.get("http://tusachxinh.info/").html()
     //return Response.success(doc)
     var genres = doc.select("#nav-tags .tags a")
     //return Response.success(genres)

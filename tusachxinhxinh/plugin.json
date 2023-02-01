@@ -2,9 +2,9 @@
   "metadata": {
     "name": "Tusachxinh.com",
     "author": "Cá mụp cắn cáp",
-    "version": 3,
-    "source": "https://tusachxinh.com",
-    "regexp": "(www.)?tusachxinh.com/[^/].+/?$",
+    "version": 4,
+    "source": "https://tusachxinh.info",
+    "regexp": "(www.)?tusachxinh(.*?)/[^/].+/?$",
     "description": "Fix code",
     "local": "vi-VN",
     "language": "javascript",
