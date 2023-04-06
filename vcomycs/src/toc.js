@@ -1,5 +1,7 @@
+load('config.js');
 function execute(url) {
-            url = url.replace("vcomycs.net","vcomycs.co")
+    //url = url.replace("vcomycs.net","vcomycs.co")
+    url = url.replace(/^(?:https?:\/\/)?(?:[^@\n]+@)?(?:www\.)?([^:\/\n?]+)/img, BASE_URL);
     var doc = Http.get(url).html();
 
     if (doc){
@@ -12,7 +14,7 @@ function execute(url) {
                 //name: e.select("span")[0].text().replace('[...] – ',''),
                 name: title + " - " + e.select("span").first().text().match(/Chap.+/)[0],
                 url: e.attr("href"),
-                host: "https://vcomycs.co"
+                host: BASE_URL
             });
         }
     }

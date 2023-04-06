@@ -1,5 +1,6 @@
+load('config.js');
 function execute() {
-    var doc = Http.get("https://vcomycs.co/so-do-trang/").html()
+    var doc = Http.get(BASE_URL + "so-do-trang/").html()
     var genres = doc.select(".tags a")
     var listGenre = []
     // for(var i in genres){
