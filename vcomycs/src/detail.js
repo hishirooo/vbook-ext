@@ -1,5 +1,7 @@
+load('config.js');
 function execute(url) {
-            url = url.replace("vcomycs.net","vcomycs.co")
+            //url = url.replace("vcomycs.net","vcomycs.co")
+    url = url.replace(/^(?:https?:\/\/)?(?:[^@\n]+@)?(?:www\.)?([^:\/\n?]+)/img, BASE_URL);    
     var doc = Http.get(url).html()
 
     var ongoing = doc.select(".comic-intro-text .comic-stt").text()
@@ -8,7 +10,7 @@ function execute(url) {
     return Response.success({
         name : doc.select(".info-title").text(),
         cover : doc.select(".img-thumbnail").attr("src"),
-        host : "https://vcomycs.co",
+        host : BASE_URL,
         author : doc.select(".comic-intro-text span").get(1).text(),
         description : doc.select(".text-justify p").text(),
         ongoing : ongoing.indexOf('Đang tiến hành')!=-1,

@@ -1,7 +1,8 @@
 load('crypto.js');
-
+load('config.js');
 function execute(url) {
-        url = url.replace("vcomycs.net","vcomycs.co")
+      //  url = url.replace("vcomycs.net","vcomycs.co")
+      url = url.replace(/^(?:https?:\/\/)?(?:[^@\n]+@)?(?:www\.)?([^:\/\n?]+)/img, BASE_URL);
     //var doc = Http.get(url).string()
     var doc = fetch(url).text()
 
