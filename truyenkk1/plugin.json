@@ -2,7 +2,7 @@
   "metadata": {
     "name": "TruyenKK",
     "author": "Cá mụp cắn cáp",
-    "version": 10,
+    "version": 11,
     "source": "https://truyenkkz.com/",
     "regexp": "(www.)?truyenkkz.com/truyen/[^/]+/?$",
     "description": "Truyện chữ, truyện tranh tùm lum...",
@@ -13,8 +13,8 @@
   },
   "script": {
     "home": "home.js",
-    "genre": "genre.js",
     "detail": "detail.js",
+    "genre": "genre.js",
     "search": "search.js",
     "toc": "toc.js",
     "chap": "chap.js"
