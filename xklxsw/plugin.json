@@ -2,10 +2,9 @@
   "metadata": {
     "name": "xklxsw",
     "author": "Cá Mụp Cắn Cáp",
-    "version": 5,
-    "source": "https://www.xklxsw.com/",
-    "regexp": "(www.)?(m.)?xklxsw.com/book/\\d+/?",//regex đúng detail.js là được
-    //"regexp": "(www.)?xklxsw.com/book/(\\d+)/$)",
+    "version": 6,
+    "source": "https://www.kelexsw.com",
+    "regexp": "(www.)?(m.)?kelexsw.com/book/\\d+/?",
     "description": "text",
     "local": "vi-VN",
     "language": "javascript",
@@ -13,9 +12,7 @@
   },
   "script": {
     "home": "home.js",
-    //"genre": "genre.js",
     "detail": "detail.js",
-    //"search": "search.js",
     "toc": "toc.js",
     "chap": "chap.js"
   }

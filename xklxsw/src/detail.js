@@ -1,16 +1,16 @@
 function execute(url) {
-    if(url.indexOf('m.xklxsw')!=-1)
-        url = url.replace('m.xklxsw','xklxsw')
+    if(url.indexOf('m.kelexsw')!=-1)
+        url = url.replace('m.kelexsw','kelexsw')
     var doc = Http.get(url+"/").html();
     if (doc) {
         return Response.success({
             name: doc.select(".content .fd-list .bookimg img").attr("alt"),
             cover: doc.select(".content .fd-list .bookimg img").attr("data-original"),
-            host: "https://www.xklxsw.com",
+            host: "https://www.kelexsw.com",
             author: doc.select(".content .fd-list").text().match(/作者：(.+?)\s字数/)[1],
             description: doc.select(".content .fd-list").text().match(/简介：(.*?)[。 |！]《/)[1],
             detail: "Author: " + doc.select(".content .fd-list").text().match(/作者：(.+?)\s字数/)[1]
-            
+
         });
 
     }
