@@ -9,7 +9,7 @@
         "author": "Cá Mụp Cắn Cáp",
         "path": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/xklxsw/plugin.zip",
         "version": 5,
-        "source": "https://www.xklxsw.com",
+        "source": "https://www.kelexsw.com",
         "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/xklxsw/icon.png",
         "description": "Đọc truyện trên trang Xklxsw.com",
         "type":  "chineses_novel",
@@ -143,7 +143,7 @@
         "name": "Hentaifox.com",
         "author": "Cá Mụp Cắn Cáp",
         "path": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/hentaifox/plugin.zip",
-        "version": 3,
+        "version": 4,
         "source": "http://hentaifox.com/",
         "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/hentaifox/icon.png",
         "description": "Đọc truyện trên trang http://hentaifox.com/"
@@ -216,7 +216,7 @@
         "source": "https://m.sxyxht.com/",
         "icon": "https://raw.githubusercontent.com/hishirooo/vbook-ext/master/sxyxht/icon.png",
         "description": "Đọc truyện tại https://m.sxyxht.com/"
-        
+
       }
       ,
       {
@@ -279,6 +279,6 @@
         "locale": "vi-VN"
       }
     ]
-    
+
 }
-  
+
