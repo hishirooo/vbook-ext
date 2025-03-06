@@ -9,11 +9,11 @@ function execute(key, page) {
         books.forEach(book => listBook.push({
             name: book.select(".caption a").text(),
             link: book.select(".caption a").attr("href"),
-            cover: book.select(".inner_thumb img").attr("src"),
+            cover: book.select(".inner_thumb img").attr("data-src"),
             description: "",
             host: "https://hentaifox.com"
         }))
-        if (listBook.length == 0) next = ""; 
+        if (listBook.length == 0) next = "";
         else next = (parseInt(page) + 1).toString();
 
         return Response.success(listBook,next)
