@@ -2,7 +2,7 @@
   "metadata": {
     "name": "Hentaifox.com",
     "author": "Cá mụp cắn cáp",
-    "version": 4,
+    "version": 5,
     "source": "https://hentaifox.com/",
     "regexp": "(www.)?hentaifox.com/gallery/(\\d+)/?$",
     "description": "Fix lỗi load chapter",
